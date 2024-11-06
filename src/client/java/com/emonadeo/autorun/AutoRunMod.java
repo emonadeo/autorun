@@ -5,21 +5,18 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientEntityEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.network.ClientPlayerEntity;
-import net.minecraft.client.option.KeyBinding;
-import net.minecraft.client.util.InputUtil;
+import net.minecraft.client.KeyMapping;
+import net.minecraft.client.player.LocalPlayer;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.player.Input;
+import net.minecraft.client.Minecraft;
 import org.lwjgl.glfw.GLFW;
-
+import com.mojang.blaze3d.platform.InputConstants;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.HashSet;
 import java.util.Properties;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 public class AutoRunMod implements ClientModInitializer {
 
@@ -27,99 +24,118 @@ public class AutoRunMod implements ClientModInitializer {
     public static final File CFG_FILE = new File(FabricLoader.getInstance().getConfigDir().toFile(),
             "autorun.properties");
 
-    private static KeyBinding keyBinding;
-    private static Set<MovementDirection> toggled;
-    private static long timeActivated;
-    private static int delayBuffer;
+    public static boolean toggleAutoJump = true;
+    public static boolean persistAutoRun = false;
+    public static boolean alwaysSprint = false;
 
-    private static boolean originalAutoJumpSetting;
-    private static boolean toggleAutoJump;
-    private static boolean togglePersistAutoRun;
+    public static boolean forward = false;
+    public static boolean backward = false;
+    public static boolean left = false;
+    public static boolean right = false;
+    public static boolean sprint = false;
+
+    private static boolean activating = false;
+    private static boolean originalAutoJumpSetting = false;
+
+    private static KeyMapping keyBinding;
 
     @Override
     public void onInitializeClient() {
-        AutoRunMod.toggled = new HashSet<>();
-        AutoRunMod.timeActivated = -1;
-        AutoRunMod.delayBuffer = 20;
-        AutoRunMod.toggleAutoJump = true;
-        AutoRunMod.togglePersistAutoRun = false;
-        AutoRunMod.keyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
+        loadConfig(CFG_FILE);
+        // Re-save so that new properties will appear in old config files
+        saveConfig(CFG_FILE);
+
+        keyBinding = KeyBindingHelper.registerKeyBinding(new KeyMapping(
                 "key.autorun.toggle",
-                InputUtil.Type.KEYSYM,
+                InputConstants.Type.KEYSYM,
                 GLFW.GLFW_KEY_O, // Default to 'o'
                 "key.categories.movement" // Append movement category
         ));
 
-        loadConfig(CFG_FILE);
-
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if (client.world != null && keyBinding.wasPressed()) {
-                boolean activating = toggled.isEmpty();
-
-                if (!activating) {
-                    // Deactivating by pressing AutoRun key
-                    toggled.clear();
-                    restoreAutoJump(client);
+            while (keyBinding.consumeClick() && client.level != null) {
+                if (forward || backward || left || right) {
+                    disableAutoRun(client);
                 } else {
-                    // Activating
-                    Set<MovementDirection> pressedDirections = Arrays.stream(MovementDirection.values())
-                            .filter(dir -> dir.getKeyBinding(client).isPressed()).collect(Collectors.toSet());
-
-                    if (!pressedDirections.isEmpty()) {
-                        // Activate pressed directions
-                        toggled.addAll(pressedDirections);
-                    } else {
-                        // Activate forward by default
-                        toggled.add(MovementDirection.FORWARD);
-                    }
-
-                    timeActivated = client.world.getTime();
-                    enableAutoJump(client);
+                    enableAutoRun(client);
+                    activating = true;
                 }
             }
+        });
 
-            if (timeActivated != -1 && client.world != null
-                    && client.world.getTime() - timeActivated >= delayBuffer) {
-                x: for (MovementDirection dir : toggled) {
-                    for (KeyBinding terminator : dir.getTerminators(client)) {
-                        if (terminator.isPressed()) {
-                            // Deactivating by pressing movement key
-                            toggled.clear();
-                            timeActivated = -1;
-                            restoreAutoJump(client);
-                            break x;
-                        }
-                    }
+        ClientTickEvents.END_CLIENT_TICK.register(client -> {
+            if (activating) {
+                if ((forward && !client.options.keyUp.isDown())
+                        || (backward && !client.options.keyDown.isDown())
+                        || (left && !client.options.keyLeft.isDown())
+                        || (right && !client.options.keyRight.isDown())) {
+                    activating = false;
                 }
+                return;
+            }
+
+            if ((forward || backward) && (client.options.keyUp.isDown() || client.options.keyDown.isDown())) {
+                disableAutoRun(client);
+            }
+            if ((left || right) && (client.options.keyLeft.isDown() || client.options.keyRight.isDown())) {
+                disableAutoRun(client);
             }
         });
 
         ClientEntityEvents.ENTITY_UNLOAD.register((entity, clientWorld) -> {
-            if (entity instanceof ClientPlayerEntity) {
-                if (!togglePersistAutoRun) {
-                    toggled.clear();
-                    restoreAutoJump(MinecraftClient.getInstance());
-                }
+            if (entity instanceof LocalPlayer && !persistAutoRun) {
+                disableAutoRun(Minecraft.getInstance());
             }
         });
     }
 
-    public static void enableAutoJump(MinecraftClient client) {
-        if (!toggleAutoJump)
+    private static void enableAutoRun(Minecraft client) {
+        client.player.displayClientMessage(Component.literal("Activating Auto-Run"), false);
+
+        if (toggleAutoJump) {
+            originalAutoJumpSetting = client.options.autoJump().get();
+            client.options.autoJump().set(true);
+            client.options.broadcastOptions();
+        }
+
+        Input input = client.player.input.keyPresses;
+        if (input.sprint() || alwaysSprint) {
+            sprint = true;
+        }
+        if (!input.forward() && !input.backward() && !input.left() && !input.right()) {
+            // Auto-Run forward if no movement key is pressed
+            forward = true;
             return;
-
-        originalAutoJumpSetting = client.options.getAutoJump().getValue();
-
-        client.options.getAutoJump().setValue(true);
-        client.options.sendClientSettings();
+        }
+        // At least 1 movement key is pressed
+        if (input.forward()) {
+            forward = true;
+        }
+        if (input.backward()) {
+            backward = true;
+        }
+        if (input.left()) {
+            left = true;
+        }
+        if (input.right()) {
+            right = true;
+        }
     }
 
-    public static void restoreAutoJump(MinecraftClient client) {
-        if (!toggleAutoJump)
-            return;
+    private static void disableAutoRun(Minecraft client) {
+        client.player.displayClientMessage(Component.literal("Deactivating Auto-Run"), false);
 
-        client.options.getAutoJump().setValue(originalAutoJumpSetting);
-        client.options.sendClientSettings();
+        forward = false;
+        backward = false;
+        left = false;
+        right = false;
+        sprint = false;
+
+        // Restore Auto-Jump
+        if (toggleAutoJump) {
+            client.options.autoJump().set(originalAutoJumpSetting);
+            client.options.broadcastOptions();
+        }
     }
 
     public static void loadConfig(File file) {
@@ -129,12 +145,9 @@ public class AutoRunMod implements ClientModInitializer {
                 saveConfig(file);
             }
             cfg.load(new FileInputStream(file));
-            delayBuffer = Integer.parseInt(cfg.getProperty("delayBuffer", "20"));
+            alwaysSprint = Boolean.parseBoolean(cfg.getProperty("alwaysSprint", "false"));
+            persistAutoRun = Boolean.parseBoolean(cfg.getProperty("persistAutoRun", "false"));
             toggleAutoJump = Boolean.parseBoolean(cfg.getProperty("toggleAutoJump", "true"));
-            togglePersistAutoRun = Boolean.parseBoolean(cfg.getProperty("togglePersistAutoRun", "false"));
-
-            // Re-save so that new properties will appear in old config files
-            saveConfig(file);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -143,41 +156,13 @@ public class AutoRunMod implements ClientModInitializer {
     public static void saveConfig(File file) {
         try {
             FileOutputStream fos = new FileOutputStream(file, false);
-            fos.write(("delayBuffer=" + delayBuffer + "\n").getBytes());
+            fos.write(("alwaysSprint=" + alwaysSprint + "\n").getBytes());
+            fos.write(("persistAutoRun=" + persistAutoRun + "\n").getBytes());
             fos.write(("toggleAutoJump=" + toggleAutoJump + "\n").getBytes());
-            fos.write(("togglePersistAutoRun=" + togglePersistAutoRun + "\n").getBytes());
             fos.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    public static Set<MovementDirection> getToggled() {
-        return toggled;
-    }
-
-    public static int getDelayBuffer() {
-        return delayBuffer;
-    }
-
-    public static void setDelayBuffer(int delayBuffer) {
-        AutoRunMod.delayBuffer = delayBuffer;
-    }
-
-    public static boolean isToggleAutoJump() {
-        return toggleAutoJump;
-    }
-
-    public static void setToggleAutoJump(boolean toggleAutoJump) {
-        AutoRunMod.toggleAutoJump = toggleAutoJump;
-    }
-
-    public static boolean isPersistAutoRun() {
-        return togglePersistAutoRun;
-    }
-
-    public static void setPersistAutoRun(boolean togglePersistAutoRun) {
-        AutoRunMod.togglePersistAutoRun = togglePersistAutoRun;
     }
 
 }

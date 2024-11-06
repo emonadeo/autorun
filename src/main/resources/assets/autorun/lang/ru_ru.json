@@ -1,9 +1,7 @@
 {
-  "key.autorun.toggle": "Вкл/Выкл Авто-Бег",
-  "title.autorun.config": "АвтоБег",
-  "config.autorun.general": "Общее",
-  "config.autorun.delayBuffer": "Буфер Задержки",
-  "config.autorun.delayBuffer.description": "Буфер активации перед повторной деактивации привязки клавиш",
-  "config.autorun.toggleAutoJump": "Вкл/Выкл Автопрыжок",
-  "config.autorun.toggleAutoJump.description": "Включить Автопрыжок пока Авто-Бег активен"
+	"config.autorun.general": "Общее",
+	"config.autorun.toggleAutoJump": "Вкл/Выкл Автопрыжок",
+	"config.autorun.toggleAutoJump.description": "Включить Автопрыжок пока Авто-Бег активен",
+	"key.autorun.toggle": "Вкл/Выкл Авто-Бег",
+	"title.autorun.config": "АвтоБег"
 }

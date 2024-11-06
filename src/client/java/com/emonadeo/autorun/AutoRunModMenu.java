@@ -5,49 +5,64 @@ import com.terraformersmc.modmenu.api.ModMenuApi;
 import me.shedaniel.clothconfig2.api.ConfigBuilder;
 import me.shedaniel.clothconfig2.api.ConfigCategory;
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder;
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.text.Text;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
 
 public class AutoRunModMenu implements ModMenuApi, ConfigScreenFactory<Screen> {
-    @Override
-    public ConfigScreenFactory<Screen> getModConfigScreenFactory() {
-        return this;
-    }
+        @Override
+        public ConfigScreenFactory<Screen> getModConfigScreenFactory() {
+                return this;
+        }
 
-    @Override
-    public Screen create(Screen screen) {
-        ConfigBuilder builder = ConfigBuilder.create()
-                .setParentScreen(screen)
-                .setTitle(Text.translatable("title." + AutoRunMod.MODID + ".config"));
+        @Override
+        public Screen create(Screen screen) {
+                ConfigBuilder builder = ConfigBuilder.create()
+                                .setParentScreen(screen)
+                                .setTitle(Component.translatable("title." + AutoRunMod.MODID + ".config"));
 
-        ConfigEntryBuilder entryBuilder = builder.entryBuilder();
-        ConfigCategory general = builder.getOrCreateCategory(Text.translatable("config." + AutoRunMod.MODID + ".general"));
+                ConfigEntryBuilder entryBuilder = builder.entryBuilder();
+                ConfigCategory general = builder
+                                .getOrCreateCategory(Component.translatable("config." + AutoRunMod.MODID + ".general"));
 
-        // Toogle Auto-Jump
-        general.addEntry(entryBuilder.startBooleanToggle(Text.translatable("config." + AutoRunMod.MODID + ".toggleAutoJump"), AutoRunMod.isToggleAutoJump())
-                .setDefaultValue(true)
-                .setTooltip(Text.translatable("config." + AutoRunMod.MODID + ".toggleAutoJump.description"))
-                .setSaveConsumer(AutoRunMod::setToggleAutoJump)
-                .build());
+                // Toogle Auto-Jump
+                general.addEntry(entryBuilder
+                                .startBooleanToggle(
+                                                Component.translatable(
+                                                                "config." + AutoRunMod.MODID + ".toggleAutoJump"),
+                                                AutoRunMod.toggleAutoJump)
+                                .setDefaultValue(true)
+                                .setTooltip(Component.translatable(
+                                                "config." + AutoRunMod.MODID + ".toggleAutoJump.description"))
+                                .setSaveConsumer((value) -> AutoRunMod.toggleAutoJump = value)
+                                .build());
 
-        // Toogle run on start
-        general.addEntry(entryBuilder.startBooleanToggle(Text.translatable("config." + AutoRunMod.MODID + ".togglePersistAutoRun"), AutoRunMod.isPersistAutoRun())
-                .setDefaultValue(false)
-                .setTooltip(Text.translatable("config." + AutoRunMod.MODID + ".togglePersistAutoRun.description"))
-                .setSaveConsumer(AutoRunMod::setPersistAutoRun)
-                .build());
+                // Persist Auto-Run
+                general.addEntry(entryBuilder
+                                .startBooleanToggle(
+                                                Component.translatable(
+                                                                "config." + AutoRunMod.MODID + ".persistAutoRun"),
+                                                AutoRunMod.persistAutoRun)
+                                .setDefaultValue(false)
+                                .setTooltip(Component.translatable(
+                                                "config." + AutoRunMod.MODID + ".persistAutoRun.description"))
+                                .setSaveConsumer((value) -> AutoRunMod.persistAutoRun = value)
+                                .build());
 
+                // Always Sprint
+                general.addEntry(entryBuilder
+                                .startBooleanToggle(
+                                                Component.translatable(
+                                                                "config." + AutoRunMod.MODID + ".alwaysSprint"),
+                                                AutoRunMod.alwaysSprint)
+                                .setDefaultValue(false)
+                                .setTooltip(Component.translatable(
+                                                "config." + AutoRunMod.MODID + ".alwaysSprint"))
+                                .setSaveConsumer((value) -> AutoRunMod.alwaysSprint = value)
+                                .build());
 
-        // Delay Buffer
-        general.addEntry(entryBuilder.startIntField(Text.translatable("config." + AutoRunMod.MODID + ".delayBuffer"), AutoRunMod.getDelayBuffer())
-                .setDefaultValue(20)
-                .setTooltip(Text.translatable("config." + AutoRunMod.MODID + ".delayBuffer.description"))
-                .setSaveConsumer(AutoRunMod::setDelayBuffer)
-                .build());
-
-        return builder.setSavingRunnable(() -> {
-            AutoRunMod.saveConfig(AutoRunMod.CFG_FILE);
-            AutoRunMod.loadConfig(AutoRunMod.CFG_FILE);
-        }).build();
-    }
+                return builder.setSavingRunnable(() -> {
+                        AutoRunMod.saveConfig(AutoRunMod.CFG_FILE);
+                        AutoRunMod.loadConfig(AutoRunMod.CFG_FILE);
+                }).build();
+        }
 }

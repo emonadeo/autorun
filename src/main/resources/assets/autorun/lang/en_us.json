@@ -1,12 +1,11 @@
 {
-  "key.autorun.toggle": "Toggle Auto-Run",
-  "config.autorun.togglePersistAutoRun": "Persist Auto-Run",
-  "config.autorun.togglePersistAutoRun.description": "Keep Auto-Run toggled between leaving and joining worlds or servers",
-  "title.autorun.config": "AutoRun",
-  "config.autorun.general": "General",
-  "config.autorun.delayBuffer": "Delay Buffer",
-  "config.autorun.delayBuffer.description": "Activation buffer before the keybind can be deactivated again",
-  "config.autorun.toggleAutoJump": "Toggle Auto-Jump",
-  "config.autorun.toggleAutoJump.description": "Enable Auto-Jump while Auto-Run is active"
+	"config.autorun.general": "General",
+	"config.autorun.alwaysSprint": "Always sprint",
+	"config.autorun.alwaysSprint.description": "Always sprint while Auto-Run is active",
+	"config.autorun.persistAutoRun": "Persist Auto-Run",
+	"config.autorun.persistAutoRun.description": "Keep Auto-Run toggled between leaving and joining worlds or servers",
+	"config.autorun.toggleAutoJump": "Toggle Auto-Jump",
+	"config.autorun.toggleAutoJump.description": "Enable Auto-Jump while Auto-Run is active",
+	"key.autorun.toggle": "Toggle Auto-Run",
+	"title.autorun.config": "AutoRun"
 }
-
