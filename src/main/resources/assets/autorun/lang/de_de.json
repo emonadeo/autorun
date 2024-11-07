@@ -1,7 +1,11 @@
 {
 	"config.autorun.general": "Allgemein",
+	"config.autorun.alwaysSprint": "Automatisches Sprinten",
+	"config.autorun.alwaysSprint.description": "Sprinte dauerhaft beim automatischen Laufen",
+	"config.autorun.persistAutoRun": "Automatisches Laufen speichern",
+	"config.autorun.persistAutoRun.description": "Reaktiviere automatisches Laufen zwischen Welt- und Serverwechsel",
 	"config.autorun.toggleAutoJump": "Automatisch springen",
 	"config.autorun.toggleAutoJump.description": "Aktiviere automatisches Springen beim automatischen Laufen",
-	"title.autorun.config": "Auto-Run",
-	"key.autorun.toggle": "Automatisch laufen"
+	"key.autorun.toggle": "Automatisch laufen",
+	"title.autorun.config": "Auto-Run"
 }
