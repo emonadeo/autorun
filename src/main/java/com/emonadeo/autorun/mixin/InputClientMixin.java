@@ -1,9 +1,8 @@
 package com.emonadeo.autorun.mixin;
 
+import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import com.emonadeo.autorun.AutoRunMod;
 
@@ -14,32 +13,28 @@ import net.minecraft.world.entity.player.Input;
 @Environment(EnvType.CLIENT)
 @Mixin(Input.class)
 public class InputClientMixin {
-
-	@Inject(method = "forward", at = @At("HEAD"), cancellable = true)
-	public void forward(CallbackInfoReturnable<Boolean> info) {
-		if (AutoRunMod.forward) {
-			info.setReturnValue(true);
-		}
+	// In the standard mixin world,
+	// a redirect implies that you want to stop all
+	// other mods from touching anything relating to this
+	// and crash the game if they try.
+	// For mod compatibility, it is better to find a more specific injector
+	@ModifyReturnValue(method = "forward", at = @At("TAIL"))
+	public boolean forward(boolean original) {
+		return original || AutoRunMod.forward;
 	}
 
-	@Inject(method = "backward", at = @At("HEAD"), cancellable = true)
-	public void backward(CallbackInfoReturnable<Boolean> info) {
-		if (AutoRunMod.backward) {
-			info.setReturnValue(true);
-		}
+	@ModifyReturnValue(method = "backward", at = @At("TAIL"))
+	public boolean backward(boolean original) {
+		return original || AutoRunMod.backward;
 	}
 
-	@Inject(method = "right", at = @At("HEAD"), cancellable = true)
-	public void right(CallbackInfoReturnable<Boolean> info) {
-		if (AutoRunMod.right) {
-			info.setReturnValue(true);
-		}
+	@ModifyReturnValue(method = "right", at = @At("TAIL"))
+	public boolean right(boolean original) {
+		return original || AutoRunMod.right;
 	}
 
-	@Inject(method = "left", at = @At("HEAD"), cancellable = true)
-	public void left(CallbackInfoReturnable<Boolean> info) {
-		if (AutoRunMod.left) {
-			info.setReturnValue(true);
-		}
+	@ModifyReturnValue(method = "left", at = @At("TAIL"))
+	public boolean left(boolean original) {
+		return original || AutoRunMod.left;
 	}
 }
