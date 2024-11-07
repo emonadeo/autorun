@@ -1,14 +1,16 @@
-name: build
+name: publish
 
 on:
-    pull_request:
     push:
-        branches:
+        tags:
             - '*'
 
 jobs:
-    build:
+    publish:
         runs-on: ubuntu-22.04
+        permissions:
+            # needed to create new releases
+            contents: write
         steps:
             - name: Checkout repository
               uses: actions/checkout@v4
@@ -35,3 +37,9 @@ jobs:
               with:
                   name: Artifacts
                   path: build/libs/
+
+            - uses: Kir-Antipov/mc-publish@v3.3
+              with:
+                  modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+                  curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+                  github-token: ${{ secrets.GITHUB_TOKEN }}

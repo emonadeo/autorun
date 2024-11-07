@@ -19,9 +19,18 @@
 	},
 	"mixins": ["autorun.mixins.json"],
 	"depends": {
+		"fabric-api": "*",
 		"fabricloader": ">=0.15.10",
-		"minecraft": ">=1.21.2-",
-		"java": ">=21",
-		"fabric-api": "*"
+		"minecraft": ">=1.21.2-"
+	},
+	"suggests": {
+		"modmenu": ">=12",
+		"cloth-config": ">=16"
+	},
+	"custom": {
+		"mc-publish": {
+			"modrinth": "2i7tg1Wv",
+			"curseforge": "279429"
+		}
 	}
 }
