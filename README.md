@@ -1,4 +1,4 @@
-# Auto Run
+# Auto-Run
 
 ## Installation
 
@@ -19,7 +19,9 @@ This keybind can be customized in the controls options.
 ## FAQ
 
 ### Can I use it in my modpack?
+
 Yes.
 
 ### Where can I download the mod?
-The only official distributions are [GitHub](https://github.com/Emonadeo/AutoRun/releases), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/autorun-fabric) and [Modrinth](https://modrinth.com/mod/autorun). Please let me know if you find any other website distributing this mod.
+
+The only official distributions are [GitHub](https://github.com/Emonadeo/autorun/releases), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/autorun-fabric) and [Modrinth](https://modrinth.com/mod/autorun). Please let me know if you find any other website distributing this mod.

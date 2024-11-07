@@ -7,5 +7,5 @@
 	"config.autorun.toggleAutoJump": "Toggle Auto-Jump",
 	"config.autorun.toggleAutoJump.description": "Enable Auto-Jump while Auto-Run is active",
 	"key.autorun.toggle": "Toggle Auto-Run",
-	"title.autorun.config": "AutoRun"
+	"title.autorun.config": "Auto-Run"
 }

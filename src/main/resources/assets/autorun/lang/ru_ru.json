@@ -3,5 +3,5 @@
 	"config.autorun.toggleAutoJump": "Вкл/Выкл Автопрыжок",
 	"config.autorun.toggleAutoJump.description": "Включить Автопрыжок пока Авто-Бег активен",
 	"key.autorun.toggle": "Вкл/Выкл Авто-Бег",
-	"title.autorun.config": "АвтоБег"
+	"title.autorun.config": "Авто-Бег"
 }

@@ -1,27 +1,23 @@
 {
 	"schemaVersion": 1,
 	"id": "autorun",
+	"name": "Auto-Run",
 	"version": "${mod_version}",
-	"name": "AutoRun",
 	"description": "Hands-free walking and sprinting",
-	"authors": ["Emonadeo"],
-	"contact": {
-		"homepage": "https://github.com/Emonadeo",
-		"sources": "https://github.com/Emonadeo/AutoRun"
-	},
+	"environment": "client",
 	"license": "CC0-1.0",
 	"icon": "assets/autorun/icon.png",
-	"environment": "client",
+	"authors": ["Emonadeo"],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/autorun",
+		"sources": "https://github.com/Emonadeo/autorun",
+		"issues": "https://github.com/Emonadeo/autorun/issues"
+	},
 	"entrypoints": {
 		"client": ["com.emonadeo.autorun.AutoRunMod"],
 		"modmenu": ["com.emonadeo.autorun.AutoRunModMenu"]
 	},
-	"mixins": [
-		{
-			"config": "autorun.client.mixins.json",
-			"environment": "client"
-		}
-	],
+	"mixins": ["autorun.mixins.json"],
 	"depends": {
 		"fabricloader": ">=0.15.10",
 		"minecraft": ">=1.21.2-",

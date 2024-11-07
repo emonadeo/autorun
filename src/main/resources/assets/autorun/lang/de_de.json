@@ -2,6 +2,6 @@
 	"config.autorun.general": "Allgemein",
 	"config.autorun.toggleAutoJump": "Automatisch springen",
 	"config.autorun.toggleAutoJump.description": "Aktiviere automatisches Springen beim automatischen Laufen",
-	"title.autorun.config": "AutoRun",
+	"title.autorun.config": "Auto-Run",
 	"key.autorun.toggle": "Automatisch laufen"
 }
