@@ -102,7 +102,7 @@ public class AutoRunMod implements ClientModInitializer {
 		}
 
 		Input input = client.player.input.keyPresses;
-		if (input.sprint() || alwaysSprint) {
+		if (client.player.isSprinting() || alwaysSprint) {
 			sprint = true;
 		}
 		if (!input.forward() && !input.backward() && !input.left() && !input.right()) {
