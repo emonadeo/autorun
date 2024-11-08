@@ -1,18 +1,32 @@
 # Auto-Run
 
+[![Modrinth](https://img.shields.io/modrinth/dt/2i7tg1Wv?logo=modrinth&label=Modrinth)](https://modrinth.com/mod/autorun)
+[![CurseForge](https://img.shields.io/curseforge/dt/279429?logo=curseforge&label=CurseForge&color=orange)](https://www.curseforge.com/minecraft/mc-mods/autorun-fabric)
+[![GitHub](https://img.shields.io/github/downloads/emonadeo/autorun/total?logo=github&label=GitHub&color=blue)](https://github.com/Emonadeo/autorun/releases)
+
+Hands-free walking and sprinting in Minecraft
+
 ## Installation
 
-Download the JAR and place it into your .minecraft/mods folder. If it doesn't exist create it.
+You can download the Auto-Run mod on [GitHub](https://github.com/Emonadeo/autorun/releases), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/autorun-fabric) or [Modrinth](https://modrinth.com/mod/autorun).
 
-> [!IMPORTANT]
-> This mod requires [Fabric API](https://modrinth.com/mod/fabric-api) like most other Fabric mods.
+Other distributions are not endorsed.
+Please let me know if you find any other website distributing this mod.
 
-> [!NOTE]
-> This mod is client-side only, meaning it should only be installed on the client and not on servers.
+See https://docs.fabricmc.net/players/installing-mods on how to install mods.
+
+### Dependencies
+
+Install these mods alongside Auto-Run.
+
+-   [Fabric API](https://modrinth.com/mod/fabric-api) is **required**
+-   [Mod Menu](https://modrinth.com/mod/modmenu) and [Cloth Config API](https://modrinth.com/mod/cloth-config) are **optional**
 
 ## Usage
 
-Press 'O' to toggle automatic walking. You can also hit the sprint key to sprint while auto-walking.
+Press <kbd>O</kbd> to toggle Auto-Run.
+If you hold a specific direction during activation, it will in that direction.
+You can also hit the sprint key to sprint while auto-walking.
 
 This keybind can be customized in the controls options.
 
@@ -20,8 +34,9 @@ This keybind can be customized in the controls options.
 
 ### Can I use it in my modpack?
 
-Yes.
+**Yes.**
 
-### Where can I download the mod?
+### Do I need to install Auto-Run on the server?
 
-The only official distributions are [GitHub](https://github.com/Emonadeo/autorun/releases), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/autorun-fabric) and [Modrinth](https://modrinth.com/mod/autorun). Please let me know if you find any other website distributing this mod.
+**No.** In fact you should **not** install it on the server.
+This is a **client-side only** mod and should only be installed on the client.
