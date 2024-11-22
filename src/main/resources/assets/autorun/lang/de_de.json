@@ -4,6 +4,8 @@
 	"config.autorun.alwaysSprint.description": "Sprinte dauerhaft beim automatischen Laufen",
 	"config.autorun.persistAutoRun": "Automatisches Laufen speichern",
 	"config.autorun.persistAutoRun.description": "Reaktiviere automatisches Laufen zwischen Welt- und Serverwechsel",
+	"config.autorun.showMessage": "Zeige Nachricht",
+	"config.autorun.showMessage.description": "Zeige bei (De-)Aktivierung eine Nachricht im Chat an",
 	"config.autorun.toggleAutoJump": "Automatisch springen",
 	"config.autorun.toggleAutoJump.description": "Aktiviere automatisches Springen beim automatischen Laufen",
 	"key.autorun.toggle": "Automatisch laufen",

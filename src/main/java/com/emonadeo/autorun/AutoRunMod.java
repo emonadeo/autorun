@@ -27,9 +27,10 @@ public class AutoRunMod implements ClientModInitializer {
 	public static final File CFG_FILE = new File(FabricLoader.getInstance().getConfigDir().toFile(),
 			"autorun.properties");
 
-	public static boolean toggleAutoJump = true;
-	public static boolean persistAutoRun = false;
 	public static boolean alwaysSprint = false;
+	public static boolean persistAutoRun = false;
+	public static boolean showMessage = true;
+	public static boolean toggleAutoJump = true;
 
 	public static boolean forward = false;
 	public static boolean backward = false;
@@ -93,7 +94,9 @@ public class AutoRunMod implements ClientModInitializer {
 	}
 
 	private static void enableAutoRun(Minecraft client) {
-		client.player.displayClientMessage(Component.literal("Activating Auto-Run"), false);
+		if (showMessage) {
+			client.player.displayClientMessage(Component.literal("Activating Auto-Run"), false);
+		}
 
 		if (toggleAutoJump) {
 			originalAutoJumpSetting = client.options.autoJump().get();
@@ -126,7 +129,9 @@ public class AutoRunMod implements ClientModInitializer {
 	}
 
 	private static void disableAutoRun(Minecraft client) {
-		client.player.displayClientMessage(Component.literal("Deactivating Auto-Run"), false);
+		if (showMessage) {
+			client.player.displayClientMessage(Component.literal("Deactivating Auto-Run"), false);
+		}
 
 		forward = false;
 		backward = false;
@@ -150,6 +155,7 @@ public class AutoRunMod implements ClientModInitializer {
 			cfg.load(new FileInputStream(file));
 			alwaysSprint = Boolean.parseBoolean(cfg.getProperty("alwaysSprint", "false"));
 			persistAutoRun = Boolean.parseBoolean(cfg.getProperty("persistAutoRun", "false"));
+			showMessage = Boolean.parseBoolean(cfg.getProperty("showMessage", "true"));
 			toggleAutoJump = Boolean.parseBoolean(cfg.getProperty("toggleAutoJump", "true"));
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -161,6 +167,7 @@ public class AutoRunMod implements ClientModInitializer {
 			FileOutputStream fos = new FileOutputStream(file, false);
 			fos.write(("alwaysSprint=" + alwaysSprint + "\n").getBytes());
 			fos.write(("persistAutoRun=" + persistAutoRun + "\n").getBytes());
+			fos.write(("showMessage=" + showMessage + "\n").getBytes());
 			fos.write(("toggleAutoJump=" + toggleAutoJump + "\n").getBytes());
 			fos.close();
 		} catch (IOException e) {

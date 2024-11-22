@@ -4,6 +4,8 @@
 	"config.autorun.alwaysSprint.description": "Always sprint while Auto-Run is active",
 	"config.autorun.persistAutoRun": "Persist Auto-Run",
 	"config.autorun.persistAutoRun.description": "Keep Auto-Run toggled between leaving and joining worlds or servers",
+	"config.autorun.showMessage": "Show message",
+	"config.autorun.showMessage.description": "Show a chat message when Auto-Run is toggled",
 	"config.autorun.toggleAutoJump": "Toggle Auto-Jump",
 	"config.autorun.toggleAutoJump.description": "Enable Auto-Jump while Auto-Run is active",
 	"key.autorun.toggle": "Toggle Auto-Run",
