@@ -104,10 +104,10 @@ public class AutoRunMod implements ClientModInitializer {
 			client.options.broadcastOptions();
 		}
 
-		Input input = client.player.input.keyPresses;
 		if (client.player.isSprinting() || alwaysSprint) {
 			sprint = true;
 		}
+		Input input = client.player.input.keyPresses;
 		if (!input.forward() && !input.backward() && !input.left() && !input.right()) {
 			// Auto-Run forward if no movement key is pressed
 			forward = true;

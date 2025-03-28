@@ -9,18 +9,16 @@ import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.KeyMapping;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
+import net.minecraft.world.entity.player.Input;
 
 @Environment(EnvType.CLIENT)
 @Mixin(LocalPlayer.class)
 public class LocalPlayerClientMixin {
 
-	@WrapOperation(method = "aiStep()V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/KeyMapping;isDown()Z"))
-	public boolean wrapSprint(KeyMapping instance, Operation<Boolean> original) {
-		Minecraft client = Minecraft.getInstance();
-		if (AutoRunMod.sprint && instance == client.options.keySprint) {
+	@WrapOperation(method = "aiStep()V", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/player/Input;sprint()Z"))
+	public boolean wrapSprint(Input instance, Operation<Boolean> original) {
+		if (AutoRunMod.sprint) {
 			return true;
 		}
 		return original.call(instance);
