@@ -53,8 +53,7 @@ public class AutoRunMod implements ClientModInitializer {
 				"key.autorun.toggle",
 				InputConstants.Type.KEYSYM,
 				GLFW.GLFW_KEY_O, // Default to 'o'
-				"key.categories.movement" // Append movement category
-		));
+				KeyMapping.Category.MOVEMENT));
 
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			while (keyBinding.consumeClick() && client.level != null) {
