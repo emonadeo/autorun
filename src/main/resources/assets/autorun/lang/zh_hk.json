@@ -5,7 +5,7 @@
   "config.autorun.persistAutoRun": "保留自動奔跑狀態",
   "config.autorun.persistAutoRun.description": "離開再入返世界或者伺服器之後，仍然保持之前嘅自動奔跑狀態",
   "config.autorun.showMessage": "顯示訊息",
-  "config.autorun.showMessage.description": "當切換自動奔跑時顯示一條聊天室訊息",
+  "config.autorun.showMessage.description": "切換自動奔跑之後顯示一條聊天室訊息",
   "config.autorun.toggleAutoJump": "開/關自動跳躍",
   "config.autorun.toggleAutoJump.description": "當自動奔跑開著時開啟自動跳躍",
   "key.autorun.toggle": "開/關自動奔跑",
