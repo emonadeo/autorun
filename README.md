@@ -10,9 +10,6 @@ Hands-free walking and sprinting in Minecraft
 
 You can download the Auto-Run mod on [GitHub](https://github.com/Emonadeo/autorun/releases), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/autorun-fabric) or [Modrinth](https://modrinth.com/mod/autorun).
 
-Other distributions are not endorsed.
-Please let me know if you find any other website distributing this mod.
-
 See https://docs.fabricmc.net/players/installing-mods on how to install mods.
 
 ### Dependencies
