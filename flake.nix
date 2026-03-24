@@ -19,7 +19,7 @@
         devShells.default = pkgs.mkShell {
           name = "autorun";
           packages = [
-            pkgs.jdk21
+            pkgs.jdk25
             pkgs.jdt-language-server
           ];
         };

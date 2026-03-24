@@ -13,7 +13,7 @@ import com.mojang.blaze3d.platform.InputConstants;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientEntityEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
@@ -49,7 +49,7 @@ public class AutoRunMod implements ClientModInitializer {
 		// Re-save so that new properties will appear in old config files
 		saveConfig(CFG_FILE);
 
-		keyBinding = KeyBindingHelper.registerKeyBinding(new KeyMapping(
+		keyBinding = KeyMappingHelper.registerKeyMapping(new KeyMapping(
 				"key.autorun.toggle",
 				InputConstants.Type.KEYSYM,
 				GLFW.GLFW_KEY_O, // Default to 'o'
@@ -94,7 +94,7 @@ public class AutoRunMod implements ClientModInitializer {
 
 	private static void enableAutoRun(Minecraft client) {
 		if (showMessage) {
-			client.player.displayClientMessage(Component.literal("Activating Auto-Run"), false);
+			client.player.sendOverlayMessage(Component.literal("Activating Auto-Run"));
 		}
 
 		if (toggleAutoJump) {
@@ -129,7 +129,7 @@ public class AutoRunMod implements ClientModInitializer {
 
 	private static void disableAutoRun(Minecraft client) {
 		if (showMessage) {
-			client.player.displayClientMessage(Component.literal("Deactivating Auto-Run"), false);
+			client.player.sendOverlayMessage(Component.literal("Deactivating Auto-Run"));
 		}
 
 		forward = false;
