@@ -1,0 +1,2 @@
+- Port to Minecraft 26.1
+- Display (de)activation in the overlay instead of the chat

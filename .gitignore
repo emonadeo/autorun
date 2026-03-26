@@ -1,9 +1,11 @@
-# gradle
+.env
 
 .gradle/
 build/
-out/
 classes/
+out/
+run/
+temp/
 
 # eclipse
 
@@ -24,17 +26,13 @@ bin/
 .classpath
 .project
 
-# macos
-
-*.DS_Store
-
-# fabric
-
-run/
-
 # java
 
 hs_err_*.log
 replay_*.log
 *.hprof
 *.jfr
+
+# macos
+
+*.DS_Store

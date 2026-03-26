@@ -72,12 +72,20 @@ publisher {
 	setVersionType("release")
 	setVersion("mc${project.minecraft_version}-v${project.mod_version}")
 	setDisplayName("v${project.mod_version} (Minecraft ${project.minecraft_version})")
+	setChangelog(file("CHANGELOG.md"))
 	setGameVersions("26.1")
 	setLoaders("fabric")
 	setCurseEnvironment("client")
 	setArtifact(jar)
 	setDisableMalwareScanner(true) // Disable the built in Fractureizer scanner
-	setJavaVersions(["Java 25"]) // Currently only used by CurseForge
+	setJavaVersions([JavaVersion.VERSION_25]) // Currently only used by CurseForge
+	github {
+		repo("emonadeo/autorun")
+		displayName("v${project.mod_version} (Minecraft ${project.minecraft_version})")
+		tag("mc${project.minecraft_version}-v${project.mod_version}")
+		createTag(true)
+		createRelease(true)
+	}
 	curseDepends {
 		required("fabric-api")
 		optional("modmenu")
