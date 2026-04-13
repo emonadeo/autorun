@@ -20,7 +20,6 @@
           name = "autorun";
           packages = [
             pkgs.jdk25
-            pkgs.jdt-language-server
           ];
         };
       }

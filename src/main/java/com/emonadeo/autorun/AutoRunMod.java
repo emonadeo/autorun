@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Optional;
 import java.util.Properties;
 
 import org.lwjgl.glfw.GLFW;
@@ -27,21 +28,28 @@ public class AutoRunMod implements ClientModInitializer {
 	public static final File CFG_FILE = new File(FabricLoader.getInstance().getConfigDir().toFile(),
 			"autorun.properties");
 
-	public static boolean alwaysSprint = false;
-	public static boolean persistAutoRun = false;
-	public static boolean showMessage = true;
-	public static boolean toggleAutoJump = true;
+	public static boolean configAlwaysSprint = false;
+	public static boolean configPersistAutoRun = false;
+	public static boolean configShowMessage = true;
+	public static boolean configToggleAutoJump = true;
 
-	public static boolean forward = false;
-	public static boolean backward = false;
-	public static boolean left = false;
-	public static boolean right = false;
-	public static boolean sprint = false;
+	public static boolean overrideForward = false;
+	public static boolean overrideBackward = false;
+	public static boolean overrideLeft = false;
+	public static boolean overrideRight = false;
+	public static boolean overrideSprint = false;
 
-	private static boolean activating = false;
 	private static boolean originalAutoJumpSetting = false;
 
-	private static KeyMapping keyBinding;
+	/**
+	 * To avoid immediate deactivation after activation, discard the initial
+	 * direction inputs until they are released.
+	 * 
+	 * When true, ignore directional deactivation inputs
+	 */
+	private static boolean activating = false;
+
+	private static KeyMapping toggleAutoRunKey;
 
 	@Override
 	public void onInitializeClient() {
@@ -49,105 +57,109 @@ public class AutoRunMod implements ClientModInitializer {
 		// Re-save so that new properties will appear in old config files
 		saveConfig(CFG_FILE);
 
-		keyBinding = KeyMappingHelper.registerKeyMapping(new KeyMapping(
+		toggleAutoRunKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
 				"key.autorun.toggle",
 				InputConstants.Type.KEYSYM,
 				GLFW.GLFW_KEY_O, // Default to 'o'
 				KeyMapping.Category.MOVEMENT));
 
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
-			while (keyBinding.consumeClick() && client.level != null) {
-				if (forward || backward || left || right) {
-					disableAutoRun(client);
+			while (toggleAutoRunKey.consumeClick()) {
+				if (client.level == null) {
+					continue;
+				}
+				if (isAutoRunActive()) {
+					deactivateAutoRun(client);
 				} else {
-					enableAutoRun(client);
+					activateAutoRun(client);
 					activating = true;
 				}
 			}
 		});
 
+		// Deactivate when pressing the same or opposite auto-running direction
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			if (activating) {
-				if ((forward && !client.options.keyUp.isDown())
-						|| (backward && !client.options.keyDown.isDown())
-						|| (left && !client.options.keyLeft.isDown())
-						|| (right && !client.options.keyRight.isDown())) {
+				if ((overrideForward && !client.options.keyUp.isDown())
+						|| (overrideBackward && !client.options.keyDown.isDown())
+						|| (overrideLeft && !client.options.keyLeft.isDown())
+						|| (overrideRight && !client.options.keyRight.isDown())) {
 					activating = false;
 				}
 				return;
 			}
 
-			if ((forward || backward) && (client.options.keyUp.isDown() || client.options.keyDown.isDown())) {
-				disableAutoRun(client);
+			if ((overrideForward || overrideBackward)
+					&& (client.options.keyUp.isDown() || client.options.keyDown.isDown())) {
+				deactivateAutoRun(client);
 			}
-			if ((left || right) && (client.options.keyLeft.isDown() || client.options.keyRight.isDown())) {
-				disableAutoRun(client);
+			if ((overrideLeft || overrideRight)
+					&& (client.options.keyLeft.isDown() || client.options.keyRight.isDown())) {
+				deactivateAutoRun(client);
 			}
 		});
 
 		ClientEntityEvents.ENTITY_UNLOAD.register((entity, clientWorld) -> {
-			if (entity instanceof LocalPlayer && !persistAutoRun) {
-				disableAutoRun(Minecraft.getInstance());
+			if (!configPersistAutoRun && isAutoRunActive() && entity instanceof LocalPlayer) {
+				deactivateAutoRun(Minecraft.getInstance());
 			}
 		});
 	}
 
 	private static boolean isAutoRunActive() {
-		return forward || backward || left || right;
+		return overrideForward || overrideBackward || overrideLeft || overrideRight;
 	}
 
-	private static void enableAutoRun(Minecraft client) {
-		if (showMessage) {
+	private static void activateAutoRun(Minecraft client) {
+		if (configShowMessage) {
 			client.player.sendOverlayMessage(Component.literal("Activating Auto-Run"));
 		}
 
-		if (toggleAutoJump) {
+		if (configToggleAutoJump) {
 			originalAutoJumpSetting = client.options.autoJump().get();
 			client.options.autoJump().set(true);
 			client.options.broadcastOptions();
 		}
 
-		if (client.player.isSprinting() || alwaysSprint) {
-			sprint = true;
+		if (client.player.isSprinting() || configAlwaysSprint) {
+			overrideSprint = true;
 		}
 		Input input = client.player.input.keyPresses;
 		if (!input.forward() && !input.backward() && !input.left() && !input.right()) {
 			// Auto-Run forward if no movement key is pressed
-			forward = true;
+			overrideForward = true;
 			return;
 		}
 		// At least 1 movement key is pressed
 		if (input.forward()) {
-			forward = true;
+			overrideForward = true;
 		}
 		if (input.backward()) {
-			backward = true;
+			overrideBackward = true;
 		}
 		if (input.left()) {
-			left = true;
+			overrideLeft = true;
 		}
 		if (input.right()) {
-			right = true;
+			overrideRight = true;
 		}
 	}
 
-	private static void disableAutoRun(Minecraft client) {
-		if (isAutoRunActive()) {
-			if (showMessage) {
-				client.player.sendOverlayMessage(Component.literal("Deactivating Auto-Run"));
-			}
+	private static void deactivateAutoRun(Minecraft client) {
+		if (configShowMessage) {
+			client.player.sendOverlayMessage(Component.literal("Deactivating Auto-Run"));
+		}
 
-			forward = false;
-			backward = false;
-			left = false;
-			right = false;
-			sprint = false;
+		overrideForward = false;
+		overrideBackward = false;
+		overrideLeft = false;
+		overrideRight = false;
+		overrideSprint = false;
 
-			// Restore Auto-Jump
-			if (toggleAutoJump) {
-				client.options.autoJump().set(originalAutoJumpSetting);
-				client.options.broadcastOptions();
-			}
+		// Restore Auto-Jump
+		if (configToggleAutoJump) {
+			client.options.autoJump().set(originalAutoJumpSetting);
+			client.options.broadcastOptions();
 		}
 	}
 
@@ -158,10 +170,10 @@ public class AutoRunMod implements ClientModInitializer {
 				saveConfig(file);
 			}
 			cfg.load(new FileInputStream(file));
-			alwaysSprint = Boolean.parseBoolean(cfg.getProperty("alwaysSprint", "false"));
-			persistAutoRun = Boolean.parseBoolean(cfg.getProperty("persistAutoRun", "false"));
-			showMessage = Boolean.parseBoolean(cfg.getProperty("showMessage", "true"));
-			toggleAutoJump = Boolean.parseBoolean(cfg.getProperty("toggleAutoJump", "true"));
+			configAlwaysSprint = Boolean.parseBoolean(cfg.getProperty("alwaysSprint", "false"));
+			configPersistAutoRun = Boolean.parseBoolean(cfg.getProperty("persistAutoRun", "false"));
+			configShowMessage = Boolean.parseBoolean(cfg.getProperty("showMessage", "true"));
+			configToggleAutoJump = Boolean.parseBoolean(cfg.getProperty("toggleAutoJump", "true"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -170,10 +182,10 @@ public class AutoRunMod implements ClientModInitializer {
 	public static void saveConfig(File file) {
 		try {
 			FileOutputStream fos = new FileOutputStream(file, false);
-			fos.write(("alwaysSprint=" + alwaysSprint + "\n").getBytes());
-			fos.write(("persistAutoRun=" + persistAutoRun + "\n").getBytes());
-			fos.write(("showMessage=" + showMessage + "\n").getBytes());
-			fos.write(("toggleAutoJump=" + toggleAutoJump + "\n").getBytes());
+			fos.write(("alwaysSprint=" + configAlwaysSprint + "\n").getBytes());
+			fos.write(("persistAutoRun=" + configPersistAutoRun + "\n").getBytes());
+			fos.write(("showMessage=" + configShowMessage + "\n").getBytes());
+			fos.write(("toggleAutoJump=" + configToggleAutoJump + "\n").getBytes());
 			fos.close();
 		} catch (IOException e) {
 			e.printStackTrace();

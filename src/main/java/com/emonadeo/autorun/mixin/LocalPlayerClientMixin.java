@@ -18,7 +18,7 @@ public class LocalPlayerClientMixin {
 
 	@WrapOperation(method = "aiStep()V", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/player/Input;sprint()Z"))
 	public boolean wrapSprint(Input instance, Operation<Boolean> original) {
-		if (AutoRunMod.sprint) {
+		if (AutoRunMod.overrideSprint) {
 			return true;
 		}
 		return original.call(instance);

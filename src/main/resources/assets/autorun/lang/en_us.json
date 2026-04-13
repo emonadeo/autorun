@@ -3,7 +3,7 @@
 	"config.autorun.alwaysSprint": "Always sprint",
 	"config.autorun.alwaysSprint.description": "Always sprint while Auto-Run is active",
 	"config.autorun.persistAutoRun": "Persist Auto-Run",
-	"config.autorun.persistAutoRun.description": "Keep Auto-Run toggled across dimensions, between leaving and joining, and after respawning",
+	"config.autorun.persistAutoRun.description": "Keep Auto-Run toggled across dimensions, servers, and respawns",
 	"config.autorun.showMessage": "Show message",
 	"config.autorun.showMessage.description": "Show a chat message when Auto-Run is toggled",
 	"config.autorun.toggleAutoJump": "Toggle Auto-Jump",

@@ -16,21 +16,21 @@ public class InputClientMixin {
 
 	@ModifyReturnValue(method = "forward", at = @At("TAIL"))
 	public boolean forward(boolean original) {
-		return original || AutoRunMod.forward;
+		return original || AutoRunMod.overrideForward;
 	}
 
 	@ModifyReturnValue(method = "backward", at = @At("TAIL"))
 	public boolean backward(boolean original) {
-		return original || AutoRunMod.backward;
+		return original || AutoRunMod.overrideBackward;
 	}
 
 	@ModifyReturnValue(method = "right", at = @At("TAIL"))
 	public boolean right(boolean original) {
-		return original || AutoRunMod.right;
+		return original || AutoRunMod.overrideRight;
 	}
 
 	@ModifyReturnValue(method = "left", at = @At("TAIL"))
 	public boolean left(boolean original) {
-		return original || AutoRunMod.left;
+		return original || AutoRunMod.overrideLeft;
 	}
 }
