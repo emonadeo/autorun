@@ -92,6 +92,10 @@ public class AutoRunMod implements ClientModInitializer {
 		});
 	}
 
+	private static boolean isAutoRunActive() {
+		return forward || backward || left || right;
+	}
+
 	private static void enableAutoRun(Minecraft client) {
 		if (showMessage) {
 			client.player.sendOverlayMessage(Component.literal("Activating Auto-Run"));
@@ -128,20 +132,22 @@ public class AutoRunMod implements ClientModInitializer {
 	}
 
 	private static void disableAutoRun(Minecraft client) {
-		if (showMessage) {
-			client.player.sendOverlayMessage(Component.literal("Deactivating Auto-Run"));
-		}
+		if (isAutoRunActive()) {
+			if (showMessage) {
+				client.player.sendOverlayMessage(Component.literal("Deactivating Auto-Run"));
+			}
 
-		forward = false;
-		backward = false;
-		left = false;
-		right = false;
-		sprint = false;
+			forward = false;
+			backward = false;
+			left = false;
+			right = false;
+			sprint = false;
 
-		// Restore Auto-Jump
-		if (toggleAutoJump) {
-			client.options.autoJump().set(originalAutoJumpSetting);
-			client.options.broadcastOptions();
+			// Restore Auto-Jump
+			if (toggleAutoJump) {
+				client.options.autoJump().set(originalAutoJumpSetting);
+				client.options.broadcastOptions();
+			}
 		}
 	}
 
