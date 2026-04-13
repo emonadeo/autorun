@@ -58,7 +58,7 @@ public class AutoRunMod implements ClientModInitializer {
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			while (keyBinding.consumeClick() && client.level != null) {
 				if (forward || backward || left || right) {
-					disableAutoRun(client, true);
+					disableAutoRun(client);
 				} else {
 					enableAutoRun(client);
 					activating = true;
@@ -78,18 +78,22 @@ public class AutoRunMod implements ClientModInitializer {
 			}
 
 			if ((forward || backward) && (client.options.keyUp.isDown() || client.options.keyDown.isDown())) {
-				disableAutoRun(client, true);
+				disableAutoRun(client);
 			}
 			if ((left || right) && (client.options.keyLeft.isDown() || client.options.keyRight.isDown())) {
-				disableAutoRun(client,true);
+				disableAutoRun(client);
 			}
 		});
 
 		ClientEntityEvents.ENTITY_UNLOAD.register((entity, clientWorld) -> {
 			if (entity instanceof LocalPlayer && !persistAutoRun) {
-				disableAutoRun(Minecraft.getInstance(), false);
+				disableAutoRun(Minecraft.getInstance());
 			}
 		});
+	}
+
+	private static boolean isAutoRunActive() {
+		return forward || backward || left || right;
 	}
 
 	private static void enableAutoRun(Minecraft client) {
@@ -127,21 +131,23 @@ public class AutoRunMod implements ClientModInitializer {
 		}
 	}
 
-	private static void disableAutoRun(Minecraft client, Boolean displayMessage) {
-		if (showMessage && displayMessage) {
-			client.player.sendOverlayMessage(Component.literal("Deactivating Auto-Run"));
-		}
+	private static void disableAutoRun(Minecraft client) {
+		if (isAutoRunActive()) {
+			if (showMessage) {
+				client.player.sendOverlayMessage(Component.literal("Deactivating Auto-Run"));
+			}
 
-		forward = false;
-		backward = false;
-		left = false;
-		right = false;
-		sprint = false;
+			forward = false;
+			backward = false;
+			left = false;
+			right = false;
+			sprint = false;
 
-		// Restore Auto-Jump
-		if (toggleAutoJump) {
-			client.options.autoJump().set(originalAutoJumpSetting);
-			client.options.broadcastOptions();
+			// Restore Auto-Jump
+			if (toggleAutoJump) {
+				client.options.autoJump().set(originalAutoJumpSetting);
+				client.options.broadcastOptions();
+			}
 		}
 	}
 
