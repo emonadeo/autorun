@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Përgjithshme",
+  "config.autorun.alwaysSprint": "Gjerithmonë Ekzekutim",
+  "config.autorun.alwaysSprint.description": "Gjerithmonë vrapim kur Auto-Vrapimi është aktiv",
+  "config.autorun.persistAutoRun": "Mbaje Auto-Vrapimin",
+  "config.autorun.persistAutoRun.description": "Mbaje Auto-Vrapimin të ndezur gjatë dimensioneve, serverëve dhe rindjejes",
+  "config.autorun.showMessage": "Shfaq Mesazh",
+  "config.autorun.showMessage.description": "Shfaq mesazh kur Auto-Vrapimi është i ndezur",
+  "config.autorun.toggleAutoJump": "Aktivizo Auto-Kërcim",
+  "config.autorun.toggleAutoJump.description": "Aktivizo Auto-Kërcimin kur Auto-Vrapimi është aktiv",
+  "key.autorun.toggle": "Aktivizo Auto-Vrapimin",
+  "title.autorun.config": "Auto-Vrapim"
+}

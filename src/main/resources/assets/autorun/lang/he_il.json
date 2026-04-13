@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "כללי",
+  "config.autorun.alwaysSprint": "רוץ תמיד",
+  "config.autorun.alwaysSprint.description": "רוץ תמיד בזמן שהריצה האוטומטית פעילה",
+  "config.autorun.persistAutoRun": "שמור על ריצה אוטומטית",
+  "config.autorun.persistAutoRun.description": "שמור על הריצה האוטומטית פעילה בממדים, שרתים והתחייה שונים",
+  "config.autorun.showMessage": "הצג הודעה",
+  "config.autorun.showMessage.description": "הצג הודעה בעת הפעלת הריצה האוטומטית",
+  "config.autorun.toggleAutoJump": "הפוך קפיצה אוטומטית",
+  "config.autorun.toggleAutoJump.description": "הפעל קפיצה אוטומטית בזמן שהריצה האוטומטית פעילה",
+  "key.autorun.toggle": "הפוך ריצה אוטומטית",
+  "title.autorun.config": "ריצה אוטומטית"
+}

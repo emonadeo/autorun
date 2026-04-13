@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Huecauh",
+  "config.autorun.alwaysSprint": "Nehuatl Ollin",
+  "config.autorun.alwaysSprint.description": "Nehuatl ollin ipan ye Auto-Ollin piya",
+  "config.autorun.persistAutoRun": "Nextlaooa Auto-Ollin",
+  "config.autorun.persistAutoRun.description": "Nextlaooa Auto-Ollin in tepeyacalli, tlapixcalli, zan cemilhuitl",
+  "config.autorun.showMessage": "Tlatemoui Nexticpac",
+  "config.autorun.showMessage.description": "Tlatemoui nexticpac ipan ye Auto-Ollin nahuatiloni",
+  "config.autorun.toggleAutoJump": "Nahuatiloni Auto-Nextlani",
+  "config.autorun.toggleAutoJump.description": "Pihui Auto-Nextlani ipan ye Auto-Ollin piya",
+  "key.autorun.toggle": "Nahuatiloni Auto-Ollin",
+  "title.autorun.config": "Auto-Ollin"
+}

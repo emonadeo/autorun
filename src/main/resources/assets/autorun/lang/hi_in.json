@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "सामान्य",
+  "config.autorun.alwaysSprint": "हमेशा दौड़ें",
+  "config.autorun.alwaysSprint.description": "ऑटो-रन सक्रिय होने पर हमेशा दौड़ें",
+  "config.autorun.persistAutoRun": "ऑटो-रन को जारी रखें",
+  "config.autorun.persistAutoRun.description": "आयामों, सर्वर और पुनः जन्म के बीच ऑटो-रन को सक्रिय रखें",
+  "config.autorun.showMessage": "संदेश दिखाएं",
+  "config.autorun.showMessage.description": "ऑटो-रन को टॉगल करने पर संदेश दिखाएं",
+  "config.autorun.toggleAutoJump": "ऑटो-जम्प को टॉगल करें",
+  "config.autorun.toggleAutoJump.description": "ऑटो-रन सक्रिय होने पर ऑटो-जम्प सक्षम करें",
+  "key.autorun.toggle": "ऑटो-रन को टॉगल करें",
+  "title.autorun.config": "ऑटो-रन"
+}

@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Γενικά",
+  "config.autorun.alwaysSprint": "Πάντα Τρέξιμο",
+  "config.autorun.alwaysSprint.description": "Τρέξε πάντα ενώ το Αυτόματο-Τρέξιμο είναι ενεργό",
+  "config.autorun.persistAutoRun": "Διατήρηση Αυτόματου-Τρέξιματος",
+  "config.autorun.persistAutoRun.description": "Κράτησε το Αυτόματο-Τρέξιμο ενεργοποιημένο σε όλες τις διαστάσεις, servers και αναγέννηση",
+  "config.autorun.showMessage": "Δείξε μήνυμα",
+  "config.autorun.showMessage.description": "Δείξε μήνυμα όταν το Αυτόματο-Τρέξιμο ενεργοποιείται",
+  "config.autorun.toggleAutoJump": "Εναλλαγή Αυτόματου-Άλματος",
+  "config.autorun.toggleAutoJump.description": "Ενεργοποίησε το Αυτόματο-Άλμα ενώ το Αυτόματο-Τρέξιμο είναι ενεργό",
+  "key.autorun.toggle": "Εναλλαγή Αυτόματου-Τρέξιματος",
+  "title.autorun.config": "Αυτόματο-Τρέξιμο"
+}

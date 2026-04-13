@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Algemeen",
+  "config.autorun.alwaysSprint": "Altyd hardloop",
+  "config.autorun.alwaysSprint.description": "Hardloop altyd terwyl Outo-Hardloop aktief is",
+  "config.autorun.persistAutoRun": "Volhou Outo-Hardloop",
+  "config.autorun.persistAutoRun.description": "Hou Outo-Hardloop aan oor dimensies, bedieners en herleef",
+  "config.autorun.showMessage": "Wys boodskap",
+  "config.autorun.showMessage.description": "Wys 'n boodskap wanneer Outo-Hardloop aangeskakel word",
+  "config.autorun.toggleAutoJump": "Wissel Outo-Spring",
+  "config.autorun.toggleAutoJump.description": "Aktiveer Outo-Spring terwyl Outo-Hardloop aktief is",
+  "key.autorun.toggle": "Wissel Outo-Hardloop",
+  "title.autorun.config": "Outo-Hardloop"
+}

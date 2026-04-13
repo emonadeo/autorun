@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Oppá",
+  "config.autorun.alwaysSprint": "Juoigi",
+  "config.autorun.alwaysSprint.description": "Juoigi ájga go Auto-juoigi lea aktihva",
+  "config.autorun.persistAutoRun": "Gozihit Auto-juoigi",
+  "config.autorun.persistAutoRun.description": "Gozihit Auto-juoigi maŋŋebealetid, servverraid, ja fas-farasdoaluid maŋŋel",
+  "config.autorun.showMessage": "Čájet viesti",
+  "config.autorun.showMessage.description": "Čájet viesti go Auto-juoigi johtolahkui",
+  "config.autorun.toggleAutoJump": "Johtolahka Auto-vahca",
+  "config.autorun.toggleAutoJump.description": "Aktivitere Auto-vahca go Auto-juoigi lea aktihva",
+  "key.autorun.toggle": "Johtolahka Auto-juoigi",
+  "title.autorun.config": "Auto-juoigi"
+}

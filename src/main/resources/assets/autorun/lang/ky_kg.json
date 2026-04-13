@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Жалпы",
+  "config.autorun.alwaysSprint": "Дайыма чуркап",
+  "config.autorun.alwaysSprint.description": "Автоматты чуркоо активдүү болгондо дайыма чуркап",
+  "config.autorun.persistAutoRun": "Автоматты чуркоону сактоо",
+  "config.autorun.persistAutoRun.description": "Өлчөм, сервер жана кайра туулап жатуу учурунда автоматты чуркоо абалын сактоо",
+  "config.autorun.showMessage": "Билдирүүнү көрсөтүү",
+  "config.autorun.showMessage.description": "Автоматты чуркоону которгондо билдирүүнү көрсөтүү",
+  "config.autorun.toggleAutoJump": "Автоматты секирүүнү которгөлөө",
+  "config.autorun.toggleAutoJump.description": "Автоматты чуркоо активдүү болгондо автоматты секирүүнү иштеттүү",
+  "key.autorun.toggle": "Автоматты чуркоону которгөлөө",
+  "title.autorun.config": "Автоматты чуркоо"
+}

@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Generelt",
+  "config.autorun.alwaysSprint": "Alltid sprint",
+  "config.autorun.alwaysSprint.description": "Sprint alltid medan Auto-Sprint er aktivt",
+  "config.autorun.persistAutoRun": "Bevar Auto-Sprint",
+  "config.autorun.persistAutoRun.description": "Bevar Auto-Sprint på tvers av dimensjonar, servarar og gjenoppliving",
+  "config.autorun.showMessage": "Vis melding",
+  "config.autorun.showMessage.description": "Vis melding når Auto-Sprint blir slått på",
+  "config.autorun.toggleAutoJump": "Slå på/av Auto-Hopp",
+  "config.autorun.toggleAutoJump.description": "Slå på Auto-Hopp medan Auto-Sprint er aktivt",
+  "key.autorun.toggle": "Slå på/av Auto-Sprint",
+  "title.autorun.config": "Auto-Sprint"
+}

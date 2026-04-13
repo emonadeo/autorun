@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Sapxatawi",
+  "config.autorun.alwaysSprint": "Askimpi T'aqiña",
+  "config.autorun.alwaysSprint.description": "Askimpi t'aqiña sapa Auto-T'aqiña tukuña",
+  "config.autorun.persistAutoRun": "Liwanaña Auto-T'aqiña",
+  "config.autorun.persistAutoRun.description": "Liwanaña Auto-T'aqiña sapxataki, servirinti, qhipñataki",
+  "config.autorun.showMessage": "Utaña Arusiña",
+  "config.autorun.showMessage.description": "Utaña arusiña ukhamatixa Auto-T'aqiña ch'amataña",
+  "config.autorun.toggleAutoJump": "Ch'amataña Auto-P'iti",
+  "config.autorun.toggleAutoJump.description": "Liwanaña Auto-P'iti sapa Auto-T'aqiña tukuña",
+  "key.autorun.toggle": "Ch'amataña Auto-T'aqiña",
+  "title.autorun.config": "Auto-T'aqiña"
+}

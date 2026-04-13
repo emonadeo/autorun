@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Üldine",
+  "config.autorun.alwaysSprint": "Alati jooksmises",
+  "config.autorun.alwaysSprint.description": "Jookse alati, kui Auto-Jooks on aktiivne",
+  "config.autorun.persistAutoRun": "Halda Auto-Jooksu",
+  "config.autorun.persistAutoRun.description": "Halda Auto-Jooksu lubatuna üle dimensioonide, serverite ja taassiidumiste",
+  "config.autorun.showMessage": "Kuva sõnum",
+  "config.autorun.showMessage.description": "Kuva sõnum, kui Auto-Jooks lülitatakse",
+  "config.autorun.toggleAutoJump": "Lülita Auto-Hüpe",
+  "config.autorun.toggleAutoJump.description": "Luba Auto-Hüpe, kui Auto-Jooks on aktiivne",
+  "key.autorun.toggle": "Lülita Auto-Jooks",
+  "title.autorun.config": "Auto-Jooks"
+}

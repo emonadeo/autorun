@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "General",
+  "config.autorun.alwaysSprint": "Sempre córrer",
+  "config.autorun.alwaysSprint.description": "Sempre córrer mentre Auto-Run està actiu",
+  "config.autorun.persistAutoRun": "Persistir Auto-Run",
+  "config.autorun.persistAutoRun.description": "Mantindre Auto-Run activat entre dimensions, servidors i reaparicions",
+  "config.autorun.showMessage": "Mostrar missatge",
+  "config.autorun.showMessage.description": "Mostrar un missatge quando canvia Auto-Run",
+  "config.autorun.toggleAutoJump": "Canviar Auto-Jump",
+  "config.autorun.toggleAutoJump.description": "Habilitar Auto-Jump mentre Auto-Run està actiu",
+  "key.autorun.toggle": "Canviar Auto-Run",
+  "title.autorun.config": "Auto-Run"
+}

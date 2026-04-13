@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Основне",
+  "config.autorun.alwaysSprint": "Завжди спринт",
+  "config.autorun.alwaysSprint.description": "Завжди спринтити при активному авто-бігу",
+  "config.autorun.persistAutoRun": "Зберігати авто-біг",
+  "config.autorun.persistAutoRun.description": "Зберігати авто-біг при зміні вимірів, серверів та відродження",
+  "config.autorun.showMessage": "Показувати повідомлення",
+  "config.autorun.showMessage.description": "Показувати повідомлення при перемиканні авто-бігу",
+  "config.autorun.toggleAutoJump": "Перемикати авто-стрибок",
+  "config.autorun.toggleAutoJump.description": "Включити авто-стрибок при активному авто-бігу",
+  "key.autorun.toggle": "Перемикати авто-біг",
+  "title.autorun.config": "Авто-біг"
+}

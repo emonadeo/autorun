@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Основно",
+  "config.autorun.alwaysSprint": "Винаги спринт",
+  "config.autorun.alwaysSprint.description": "Винаги спринтване, докато е активен Авто-бяганието",
+  "config.autorun.persistAutoRun": "Запазване на Авто-бяганието",
+  "config.autorun.persistAutoRun.description": "Запазете Авто-бяганието при смяна на размери, сървъри и възраждане",
+  "config.autorun.showMessage": "Показване на съобщение",
+  "config.autorun.showMessage.description": "Показване на съобщение при превключване на Авто-бяганието",
+  "config.autorun.toggleAutoJump": "Превключване на Авто-скока",
+  "config.autorun.toggleAutoJump.description": "Активиране на Авто-скока, докато е активен Авто-бяганието",
+  "key.autorun.toggle": "Превключване на Авто-бяганието",
+  "title.autorun.config": "Авто-бяганието"
+}

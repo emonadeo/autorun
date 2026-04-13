@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Algemien",
+  "config.autorun.alwaysSprint": "Altyd sprinte",
+  "config.autorun.alwaysSprint.description": "Altyd sprinte as Auto-Run aktief is",
+  "config.autorun.persistAutoRun": "Auto-Run behâlde",
+  "config.autorun.persistAutoRun.description": "Hâld Auto-Run oan oer dimensies, servers en respawns",
+  "config.autorun.showMessage": "Berjocht werjaan",
+  "config.autorun.showMessage.description": "Werjaan in berjocht as Auto-Run switsje",
+  "config.autorun.toggleAutoJump": "Auto-Jump omswitsje",
+  "config.autorun.toggleAutoJump.description": "Aktivearje Auto-Jump wylst Auto-Run aktief is",
+  "key.autorun.toggle": "Auto-Run omswitsje",
+  "title.autorun.config": "Auto-Run"
+}

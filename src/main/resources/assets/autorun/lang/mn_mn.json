@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Ерөнхий",
+  "config.autorun.alwaysSprint": "Үргэлж гүйлгүүр",
+  "config.autorun.alwaysSprint.description": "Автоматаар гүйлгүүр идэвхтэй үед үргэлж гүйлгүүр",
+  "config.autorun.persistAutoRun": "Автоматаар гүйлгүүрийг хадгалах",
+  "config.autorun.persistAutoRun.description": "Хэмжээс солих, сервер сольих болон дахин сэргээх үед автоматаар гүйлгүүрийн төлөвийг хадгалах",
+  "config.autorun.showMessage": "Мессеж харуулах",
+  "config.autorun.showMessage.description": "Автоматаар гүйлгүүрийг солих үед мессеж харуулах",
+  "config.autorun.toggleAutoJump": "Автоматаар үсрэх сольих",
+  "config.autorun.toggleAutoJump.description": "Автоматаар гүйлгүүр идэвхтэй үед автоматаар үсрэхийг идэвхжүүлэх",
+  "key.autorun.toggle": "Автоматаар гүйлгүүр сольих",
+  "title.autorun.config": "Автоматаар гүйлгүүр"
+}

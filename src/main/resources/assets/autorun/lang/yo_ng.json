@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Gbogbogbo",
+  "config.autorun.alwaysSprint": "Ṣọ́ọ̀ọ́ Lọ",
+  "config.autorun.alwaysSprint.description": "Ṣọ́ọ̀ọ́ lọ nígbàti Auto-Ṣọ́ọ̀ọ́-Lọ jẹ́ ńlá",
+  "config.autorun.persistAutoRun": "Tẹ́ Auto-Ṣọ́ọ̀ọ́-Lọ",
+  "config.autorun.persistAutoRun.description": "Tẹ́ Auto-Ṣọ́ọ̀ọ́-Lọ níjú àwọn ìlú, àwọn ilé-ẹ̀kọ́, àti àtúnbọ̀",
+  "config.autorun.showMessage": "Ṣe àfihàn Ìfitíláradì",
+  "config.autorun.showMessage.description": "Ṣe àfihàn ìfitíláradì nígbàti Auto-Ṣọ́ọ̀ọ́-Lọ jẹ́ tí á tẹ̀",
+  "config.autorun.toggleAutoJump": "Yí Auto-Fò Padà",
+  "config.autorun.toggleAutoJump.description": "Jáde Auto-Fò nígbàti Auto-Ṣọ́ọ̀ọ́-Lọ jẹ́ ńlá",
+  "key.autorun.toggle": "Yí Auto-Ṣọ́ọ̀ọ́-Lọ Padà",
+  "title.autorun.config": "Auto-Ṣọ́ọ̀ọ́-Lọ"
+}

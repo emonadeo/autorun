@@ -1,13 +1,13 @@
 {
-	"config.autorun.general": "通用",
-	"config.autorun.alwaysSprint": "始终保持疾跑",
-	"config.autorun.alwaysSprint.description": "在自动奔跑启用时始终保持疾跑",
-	"config.autorun.persistAutoRun": "保持自动奔跑状态",
-	"config.autorun.persistAutoRun.description": "在离开并重新加入世界或服务器后保持自动奔跑状态不变",
-	"config.autorun.showMessage": "显示消息",
-	"config.autorun.showMessage.description": "在切换自动奔跑后显示一条聊天消息",
-	"config.autorun.toggleAutoJump": "开/关自动跳跃",
-	"config.autorun.toggleAutoJump.description": "在自动奔跑启用时启用自动跳跃",
-	"key.autorun.toggle": "开/关自动奔跑",
-	"title.autorun.config": "自动奔跑"
+  "config.autorun.general": "常规设置",
+  "config.autorun.alwaysSprint": "持续冲刺",
+  "config.autorun.alwaysSprint.description": "自动跑步激活时始终冲刺",
+  "config.autorun.persistAutoRun": "保持自动跑步",
+  "config.autorun.persistAutoRun.description": "在切换维度、服务器和重生后保持自动跑步状态",
+  "config.autorun.showMessage": "显示消息",
+  "config.autorun.showMessage.description": "自动跑步切换时显示消息",
+  "config.autorun.toggleAutoJump": "切换自动跳跃",
+  "config.autorun.toggleAutoJump.description": "自动跑步激活时启用自动跳跃",
+  "key.autorun.toggle": "切换自动跑步",
+  "title.autorun.config": "自动跑步"
 }

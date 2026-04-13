@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Umum",
+  "config.autorun.alwaysSprint": "Selalu berlari cepat",
+  "config.autorun.alwaysSprint.description": "Selalu berlari cepat saat Berjalan Otomatis aktif",
+  "config.autorun.persistAutoRun": "Pertahankan Berjalan Otomatis",
+  "config.autorun.persistAutoRun.description": "Pertahankan status Berjalan Otomatis saat mengganti dimensi, server, dan respawn",
+  "config.autorun.showMessage": "Tampilkan pesan",
+  "config.autorun.showMessage.description": "Tampilkan pesan saat mengalihkan Berjalan Otomatis",
+  "config.autorun.toggleAutoJump": "Alihkan Lompat Otomatis",
+  "config.autorun.toggleAutoJump.description": "Aktifkan Lompat Otomatis saat Berjalan Otomatis aktif",
+  "key.autorun.toggle": "Alihkan Berjalan Otomatis",
+  "title.autorun.config": "Berjalan Otomatis"
+}

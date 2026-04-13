@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Allmänt",
+  "config.autorun.alwaysSprint": "Alltid sprint",
+  "config.autorun.alwaysSprint.description": "Sprintar alltid när Auto-Run är aktivt",
+  "config.autorun.persistAutoRun": "Behåll Auto-Run",
+  "config.autorun.persistAutoRun.description": "Behåll Auto-Run aktivt mellan dimensioner, servrar och respawns",
+  "config.autorun.showMessage": "Visa meddelande",
+  "config.autorun.showMessage.description": "Visa ett meddelande när Auto-Run växlas",
+  "config.autorun.toggleAutoJump": "Växla Auto-Jump",
+  "config.autorun.toggleAutoJump.description": "Aktivera Auto-Jump när Auto-Run är aktivt",
+  "key.autorun.toggle": "Växla Auto-Run",
+  "title.autorun.config": "Auto-Run"
+}

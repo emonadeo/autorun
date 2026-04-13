@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "సాధారణ",
+  "config.autorun.alwaysSprint": "ఎల్లప్పుడు పరుగెత్తు",
+  "config.autorun.alwaysSprint.description": "ఆటో-రన్ చేతనమైనప్పుడు ఎల్లప్పుడు పరుగెత్తు",
+  "config.autorun.persistAutoRun": "ఆటో-రన్ కొనసాగించు",
+  "config.autorun.persistAutoRun.description": "కొలతలు, సర్వర్‌లు మరియు పునరుత్థానం అంతటా ఆటో-రన్ సక్రియంగా ఉంచండి",
+  "config.autorun.showMessage": "సందేశం చూపించు",
+  "config.autorun.showMessage.description": "ఆటో-రన్ టోగిల్ చేయబడినప్పుడు సందేశం చూపించు",
+  "config.autorun.toggleAutoJump": "ఆటో-జంప్ టోగిల్ చేయు",
+  "config.autorun.toggleAutoJump.description": "ఆటో-రన్ చేతనమైనప్పుడు ఆటో-జంప్ చేతనం చేయు",
+  "key.autorun.toggle": "ఆటో-రన్ టోగిల్ చేయు",
+  "title.autorun.config": "ఆటో-రన్"
+}

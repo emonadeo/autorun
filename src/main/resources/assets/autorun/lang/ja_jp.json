@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "一般設定",
+  "config.autorun.alwaysSprint": "常に疾走",
+  "config.autorun.alwaysSprint.description": "自動走行中は常に疾走します",
+  "config.autorun.persistAutoRun": "自動走行を保持",
+  "config.autorun.persistAutoRun.description": "ディメンション、サーバー、リスポーン後も自動走行の状態を保持します",
+  "config.autorun.showMessage": "メッセージを表示",
+  "config.autorun.showMessage.description": "自動走行を切り替える時にメッセージを表示します",
+  "config.autorun.toggleAutoJump": "自動ジャンプを切り替え",
+  "config.autorun.toggleAutoJump.description": "自動走行中に自動ジャンプを有効にします",
+  "key.autorun.toggle": "自動走行を切り替え",
+  "title.autorun.config": "自動走行"
+}

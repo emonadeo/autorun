@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Geral",
+  "config.autorun.alwaysSprint": "Sempre correr",
+  "config.autorun.alwaysSprint.description": "Sempre correr enquanto o Auto-Run está ativo",
+  "config.autorun.persistAutoRun": "Persistir Auto-Run",
+  "config.autorun.persistAutoRun.description": "Manter o Auto-Run ativado entre dimensões, servidores e reaparições",
+  "config.autorun.showMessage": "Mostrar mensagem",
+  "config.autorun.showMessage.description": "Mostrar uma mensagem quando o Auto-Run é alternado",
+  "config.autorun.toggleAutoJump": "Alternar Auto-Jump",
+  "config.autorun.toggleAutoJump.description": "Ativar Auto-Jump enquanto o Auto-Run está ativo",
+  "key.autorun.toggle": "Alternar Auto-Run",
+  "title.autorun.config": "Auto-Run"
+}

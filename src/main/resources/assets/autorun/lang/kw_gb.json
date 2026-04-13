@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Purvos Kerrys",
+  "config.autorun.alwaysSprint": "Kynnyow Vryntes",
+  "config.autorun.alwaysSprint.description": "Kynnyow vryntes dell Auto-Kynnyow a vo agan",
+  "config.autorun.persistAutoRun": "Gorhollow Auto-Kynnyow",
+  "config.autorun.persistAutoRun.description": "Dhedha Auto-Kynnyow orth oll mynydnyow, servyow, ha dasworra",
+  "config.autorun.showMessage": "Diskouez Peswar Dyer",
+  "config.autorun.showMessage.description": "Diskouez peswar dyer pan vef Auto-Kynnyow y-chanjyow",
+  "config.autorun.toggleAutoJump": "Chanja Auto-Lamm",
+  "config.autorun.toggleAutoJump.description": "Gallos Auto-Lamm dell Auto-Kynnyow agan",
+  "key.autorun.toggle": "Chanja Auto-Kynnyow",
+  "title.autorun.config": "Auto-Kynnyow"
+}

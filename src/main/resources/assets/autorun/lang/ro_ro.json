@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "General",
+  "config.autorun.alwaysSprint": "Alergare continuă",
+  "config.autorun.alwaysSprint.description": "Alergare continuă în timp ce Auto-Run este activ",
+  "config.autorun.persistAutoRun": "Persistă Auto-Run",
+  "config.autorun.persistAutoRun.description": "Menține Auto-Run activat între dimensiuni, servere și reînviiri",
+  "config.autorun.showMessage": "Arată mesaj",
+  "config.autorun.showMessage.description": "Arată un mesaj când Auto-Run este comutat",
+  "config.autorun.toggleAutoJump": "Comută Auto-Jump",
+  "config.autorun.toggleAutoJump.description": "Activează Auto-Jump în timp ce Auto-Run este activ",
+  "key.autorun.toggle": "Comută Auto-Run",
+  "title.autorun.config": "Auto-Run"
+}

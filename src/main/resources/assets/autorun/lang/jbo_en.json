@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "cnino prami",
+  "config.autorun.alwaysSprint": "fatci klani sproti",
+  "config.autorun.alwaysSprint.description": "sproti cu cnino fi lo nu autho cu krastu",
+  "config.autorun.persistAutoRun": "srera autho",
+  "config.autorun.persistAutoRun.description": "lo autho cu srera ca lo prami be fi lo dimna zi'i lo servgu zi'i lo cnino",
+  "config.autorun.showMessage": "prami sanga",
+  "config.autorun.showMessage.description": "sanga be fi lo nu autho cu satci be lo prami",
+  "config.autorun.toggleAutoJump": "satci autho salti",
+  "config.autorun.toggleAutoJump.description": "salti cu krastu ca lo nu autho cu krastu",
+  "key.autorun.toggle": "satci autho",
+  "title.autorun.config": "autho prami"
+}

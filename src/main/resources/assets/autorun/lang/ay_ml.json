@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Tyi'tia K'awi",
+  "config.autorun.alwaysSprint": "Sto Sa'i K'awe",
+  "config.autorun.alwaysSprint.description": "Sto sa'i k'awe ki'an yaw Auto-K'awe yo'o",
+  "config.autorun.persistAutoRun": "Jwe'e Auto-K'awe",
+  "config.autorun.persistAutoRun.description": "Jwe'e Auto-K'awe ki'an sto'o, k'awa'a yo'a, sto swe'e",
+  "config.autorun.showMessage": "Ti'i Tso'o",
+  "config.autorun.showMessage.description": "Ti'i tso'o ki'an Auto-K'awe pja'i",
+  "config.autorun.toggleAutoJump": "Pja'i Auto-Si'",
+  "config.autorun.toggleAutoJump.description": "Yo'o Auto-Si' ki'an Auto-K'awe yo'o",
+  "key.autorun.toggle": "Pja'i Auto-K'awe",
+  "title.autorun.config": "Auto-K'awe"
+}

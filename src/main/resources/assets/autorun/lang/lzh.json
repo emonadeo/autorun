@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "常例",
+  "config.autorun.alwaysSprint": "常ニ奔駛スル",
+  "config.autorun.alwaysSprint.description": "自動跑步啟動時常ニ奔駛スル",
+  "config.autorun.persistAutoRun": "自動跑步ヲ保持スル",
+  "config.autorun.persistAutoRun.description": "維度ヲ切替フル時ニ、サーバー及ビ蘇生後ニモ自動跑步ノ狀態ヲ保持スル",
+  "config.autorun.showMessage": "メッセージヲ表示スル",
+  "config.autorun.showMessage.description": "自動跑步ヲ切替フル時ニメッセージヲ表示スル",
+  "config.autorun.toggleAutoJump": "自動跳躍ヲ切替フル",
+  "config.autorun.toggleAutoJump.description": "自動跑步啟動時ニ自動跳躍ヲ有效ニスル",
+  "key.autorun.toggle": "自動跑步ヲ切替フル",
+  "title.autorun.config": "自動跑步"
+}

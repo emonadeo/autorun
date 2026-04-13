@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "ona pi seme",
+  "config.autorun.alwaysSprint": "pana sinpin",
+  "config.autorun.alwaysSprint.description": "sina sinpin lon tenpo ale, jan pi auto-run li lon",
+  "config.autorun.persistAutoRun": "auto-run li lon",
+  "config.autorun.persistAutoRun.description": "auto-run li lon insa lon lete ale, pi telo ale, pi seli ale",
+  "config.autorun.showMessage": "pali toki",
+  "config.autorun.showMessage.description": "pali toki sin, lon tenpo pi auto-run li pali pona",
+  "config.autorun.toggleAutoJump": "sike taso jump",
+  "config.autorun.toggleAutoJump.description": "jump li lon, lon tenpo pi auto-run li lon",
+  "key.autorun.toggle": "pali pi auto-run",
+  "title.autorun.config": "auto-run pi pana sinpin"
+}

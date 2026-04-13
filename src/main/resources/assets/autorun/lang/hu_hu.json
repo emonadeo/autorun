@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Általános",
+  "config.autorun.alwaysSprint": "Mindig sprintelés",
+  "config.autorun.alwaysSprint.description": "Mindig sprintelj, amikor az Auto-Sprint aktív",
+  "config.autorun.persistAutoRun": "Auto-Sprint Megtartása",
+  "config.autorun.persistAutoRun.description": "Tartsd meg az Auto-Sprintet dimenziók, szerverek és újraéledések között",
+  "config.autorun.showMessage": "Üzenet megjelenítése",
+  "config.autorun.showMessage.description": "Üzenet megjelenítése az Auto-Sprint váltásakor",
+  "config.autorun.toggleAutoJump": "Auto-Ugrás Váltása",
+  "config.autorun.toggleAutoJump.description": "Engedélyezd az Auto-Ugrást, amikor az Auto-Sprint aktív",
+  "key.autorun.toggle": "Auto-Sprint Váltása",
+  "title.autorun.config": "Auto-Sprint"
+}

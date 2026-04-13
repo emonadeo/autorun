@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "ทั่วไป",
+  "config.autorun.alwaysSprint": "วิ่งแบบเร่งด้วยการวิ่งเข้า",
+  "config.autorun.alwaysSprint.description": "วิ่งแบบเร่งด้วยการวิ่งเข้าเมื่อวิ่งโดยอัตโนมัติทำงาน",
+  "config.autorun.persistAutoRun": "รักษาการวิ่งโดยอัตโนมัติ",
+  "config.autorun.persistAutoRun.description": "รักษาสถานะการวิ่งโดยอัตโนมัติในเมื่อเปลี่ยนมิติ เซิร์ฟเวอร์ และการฟื้นตัว",
+  "config.autorun.showMessage": "แสดงข้อความ",
+  "config.autorun.showMessage.description": "แสดงข้อความเมื่อสลับการวิ่งโดยอัตโนมัติ",
+  "config.autorun.toggleAutoJump": "สลับการกระโดดโดยอัตโนมัติ",
+  "config.autorun.toggleAutoJump.description": "เปิดใช้การกระโดดโดยอัตโนมัติเมื่อวิ่งโดยอัตโนมัติทำงาน",
+  "key.autorun.toggle": "สลับการวิ่งโดยอัตโนมัติ",
+  "title.autorun.config": "วิ่งโดยอัตโนมัติ"
+}

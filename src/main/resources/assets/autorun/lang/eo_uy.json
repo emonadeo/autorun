@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Ĝenerala",
+  "config.autorun.alwaysSprint": "Ĉiame Rapido",
+  "config.autorun.alwaysSprint.description": "Ĉiame rapido dum Aŭto-Kuri estas aktiva, mia amiko",
+  "config.autorun.persistAutoRun": "Persisti Aŭto-Kuron",
+  "config.autorun.persistAutoRun.description": "Teni Aŭto-Kuron dum ĉiaj dimensioj, serviloj, kaj reviviĝoj",
+  "config.autorun.showMessage": "Montri Mesaĝon",
+  "config.autorun.showMessage.description": "Montri mesaĝon dum Aŭto-Kuri ŝanĝiĝas, bonvolu",
+  "config.autorun.toggleAutoJump": "Ŝanĝi Aŭto-Salto",
+  "config.autorun.toggleAutoJump.description": "Aktivigi Aŭto-Salton dum Aŭto-Kuri estas aktiva",
+  "key.autorun.toggle": "Ŝanĝi Aŭto-Kuron",
+  "title.autorun.config": "Aŭto-Kuri"
+}

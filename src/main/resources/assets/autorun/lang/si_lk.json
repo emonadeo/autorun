@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "සාමාන්ය",
+  "config.autorun.alwaysSprint": "සැමවිටම දිව ගිය",
+  "config.autorun.alwaysSprint.description": "ස්වයංක්‍රීය-ධාවනය왕క‍්‍රීය වූ විට සැමවිටම දිව ගිය",
+  "config.autorun.persistAutoRun": "ස්වයංක්‍රීය-ධාවනය කරගෙන යාම",
+  "config.autorun.persistAutoRun.description": "මාඩ, සර්වරු සහ පුනරුත්පත්තිය පුරා ස්වයංක්‍රීය-ධාවනය ක්‍රීයව තබා ගැනීම",
+  "config.autorun.showMessage": "පණිවුඩ පෙන්වන්න",
+  "config.autorun.showMessage.description": "ස්වයංක්‍රීය-ධාවනය ටොගල් කරන විට පණිවුඩ පෙන්වන්න",
+  "config.autorun.toggleAutoJump": "ස්වයංක්‍රීය-පැනීම ටොගල් කරන්න",
+  "config.autorun.toggleAutoJump.description": "ස්වයංක්‍රීය-ධාවනය ක්‍රීයව ඇති විට ස්වයංක්‍රීය-පැනීම සක්‍රිය කරන්න",
+  "key.autorun.toggle": "ස්වයංක්‍රීය-ධාවනය ටොගල් කරන්න",
+  "title.autorun.config": "ස්වයංක්‍රීය-ධාවනය"
+}

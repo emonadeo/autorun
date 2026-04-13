@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Obecné",
+  "config.autorun.alwaysSprint": "Vždy sprint",
+  "config.autorun.alwaysSprint.description": "Vždy sprintovat, když je auto-běh aktivní",
+  "config.autorun.persistAutoRun": "Zachovat auto-běh",
+  "config.autorun.persistAutoRun.description": "Zachovejte auto-běh při změně dimenzí, serverů a zmrtvýchvstání",
+  "config.autorun.showMessage": "Zobrazit zprávu",
+  "config.autorun.showMessage.description": "Zobrazit zprávu, když je auto-běh přepnut",
+  "config.autorun.toggleAutoJump": "Přepnout auto-skok",
+  "config.autorun.toggleAutoJump.description": "Povolit auto-skok, když je auto-běh aktivní",
+  "key.autorun.toggle": "Přepnout auto-běh",
+  "title.autorun.config": "Auto-běh"
+}

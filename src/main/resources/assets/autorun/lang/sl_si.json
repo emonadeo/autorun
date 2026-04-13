@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Splošno",
+  "config.autorun.alwaysSprint": "Vedno sprintaj",
+  "config.autorun.alwaysSprint.description": "Vedno sprintaj, ko je samodejni tek aktiven",
+  "config.autorun.persistAutoRun": "Ohrani samodejni tek",
+  "config.autorun.persistAutoRun.description": "Ohrani samodejni tek pri spremembi dimenzij, strežnikov in ponovnega rojstva",
+  "config.autorun.showMessage": "Prikaži sporočilo",
+  "config.autorun.showMessage.description": "Prikaži sporočilo, ko je samodejni tek preklučen",
+  "config.autorun.toggleAutoJump": "Preklučite samodejni skok",
+  "config.autorun.toggleAutoJump.description": "Omogoči samodejni skok, ko je samodejni tek aktiven",
+  "key.autorun.toggle": "Preklučite samodejni tek",
+  "title.autorun.config": "Samodejni tek"
+}

@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Algemeen",
+  "config.autorun.alwaysSprint": "Altijd sprinten",
+  "config.autorun.alwaysSprint.description": "Altijd sprinten als Auto-Run actief is",
+  "config.autorun.persistAutoRun": "Auto-Run behouden",
+  "config.autorun.persistAutoRun.description": "Hou Auto-Run ingeschakeld over dimensies, servers en respawns",
+  "config.autorun.showMessage": "Bericht weergeven",
+  "config.autorun.showMessage.description": "Toon een bericht wanneer Auto-Run wordt gewijzigd",
+  "config.autorun.toggleAutoJump": "Auto-Jump omschakelen",
+  "config.autorun.toggleAutoJump.description": "Zet Auto-Jump aan als Auto-Run actief is",
+  "key.autorun.toggle": "Auto-Run omschakelen",
+  "title.autorun.config": "Auto-Run"
+}

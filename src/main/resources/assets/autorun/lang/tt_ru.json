@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Башлыча",
+  "config.autorun.alwaysSprint": "Һәр вакыт йөгерү",
+  "config.autorun.alwaysSprint.description": "Авто-йөгерү актив булганда һәр вакыт йөгерү",
+  "config.autorun.persistAutoRun": "Авто-йөгерүне сакла",
+  "config.autorun.persistAutoRun.description": "Авто-йөгерүне үлчәмнәр, серверлар һәм яңадан туу вакытында сакла",
+  "config.autorun.showMessage": "Хәбәрне күрсәт",
+  "config.autorun.showMessage.description": "Авто-йөгерү үзгәртелгәндә хәбәрне күрсәт",
+  "config.autorun.toggleAutoJump": "Авто-секерүне үзгәрт",
+  "config.autorun.toggleAutoJump.description": "Авто-йөгерү актив булганда авто-секерүне үзгәрт",
+  "key.autorun.toggle": "Авто-йөгерүне үзгәрт",
+  "title.autorun.config": "Авто-йөгерү"
+}

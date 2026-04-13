@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Algemeen",
+  "config.autorun.alwaysSprint": "Aaltied sprinten",
+  "config.autorun.alwaysSprint.description": "Sprinten aaltied terwiel Auto-Sprinten aktief is",
+  "config.autorun.persistAutoRun": "Behound Auto-Sprinten",
+  "config.autorun.persistAutoRun.description": "Behound Auto-Sprinten over dimensies, servers en wederopstanding",
+  "config.autorun.showMessage": "Berichje tonen",
+  "config.autorun.showMessage.description": "Berichje tonen wanneer Auto-Sprinten wordt in-/uitgeschakeld",
+  "config.autorun.toggleAutoJump": "Auto-Spong aan/uitzetten",
+  "config.autorun.toggleAutoJump.description": "Zet Auto-Spong aan wanneer Auto-Sprinten aktief is",
+  "key.autorun.toggle": "Auto-Sprinten aan/uitzetten",
+  "title.autorun.config": "Auto-Sprinten"
+}

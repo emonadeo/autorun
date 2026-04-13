@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "عام",
+  "config.autorun.alwaysSprint": "الركض دائماً",
+  "config.autorun.alwaysSprint.description": "الركض دائماً بينما يكون التشغيل التلقائي نشطاً",
+  "config.autorun.persistAutoRun": "استمرار التشغيل التلقائي",
+  "config.autorun.persistAutoRun.description": "الحفاظ على تبديل التشغيل التلقائي عبر الأبعاد والخوادم وإعادة الظهور",
+  "config.autorun.showMessage": "إظهار رسالة",
+  "config.autorun.showMessage.description": "إظهار رسالة عند تبديل التشغيل التلقائي",
+  "config.autorun.toggleAutoJump": "تبديل القفز التلقائي",
+  "config.autorun.toggleAutoJump.description": "تفعيل القفز التلقائي بينما يكون التشغيل التلقائي نشطاً",
+  "key.autorun.toggle": "تبديل التشغيل التلقائي",
+  "title.autorun.config": "التشغيل التلقائي"
+}

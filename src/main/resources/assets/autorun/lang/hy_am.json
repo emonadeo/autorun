@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Ընդհանուր",
+  "config.autorun.alwaysSprint": "Միշտ վազել",
+  "config.autorun.alwaysSprint.description": "Միշտ վազիր, երբ Ավտո-Վազումը ակտիվ է",
+  "config.autorun.persistAutoRun": "Պահպանել Ավտո-Վազումը",
+  "config.autorun.persistAutoRun.description": "Պահպանիր Ավտո-Վազումը չափսերի, սերվերների և վերածնունդի միջև",
+  "config.autorun.showMessage": "Ցույց տալ հաղորդագրությունը",
+  "config.autorun.showMessage.description": "Ցույց տալ հաղորդագրությունը, երբ Ավտո-Վազումը միացված է",
+  "config.autorun.toggleAutoJump": "Փոխել Ավտո-Թռիչքը",
+  "config.autorun.toggleAutoJump.description": "Միացրեք Ավտո-Թռիչքը, երբ Ավտո-Վազումը ակտիվ է",
+  "key.autorun.toggle": "Փոխել Ավտո-Վազումը",
+  "title.autorun.config": "Ավտո-Վազում"
+}

@@ -10,14 +10,14 @@ Hands-free walking and sprinting in Minecraft
 
 You can download the Auto-Run mod on [GitHub](https://github.com/Emonadeo/autorun/releases), [CurseForge](https://www.curseforge.com/minecraft/mc-mods/autorun-fabric) or [Modrinth](https://modrinth.com/mod/autorun).
 
-See https://docs.fabricmc.net/players/installing-mods on how to install mods.
+See <https://docs.fabricmc.net/players/installing-mods> on how to install mods.
 
 ### Dependencies
 
 Install these mods alongside Auto-Run.
 
--   [Fabric API](https://modrinth.com/mod/fabric-api) is **required**
--   [Mod Menu](https://modrinth.com/mod/modmenu) and [Cloth Config API](https://modrinth.com/mod/cloth-config) are **optional**
+- [Fabric API](https://modrinth.com/mod/fabric-api) is **required**
+- [Mod Menu](https://modrinth.com/mod/modmenu) and [Cloth Config API](https://modrinth.com/mod/cloth-config) are **optional**
 
 ### Cross-version support
 
@@ -37,6 +37,15 @@ If you hold a specific direction during activation, it will in that direction.
 You can also hit the sprint key to sprint while auto-walking.
 
 This keybind can be customized in the controls options.
+
+## Disclaimer
+
+Almost all localization is AI-generated. If you see any translation errors or
+inaccuracies please report them in the related issue on GitHub: <https://github.com/emonadeo/autorun/issues/10>
+
+This is the **ONLY** part of the mod that was created with AI assistance. Everything
+else was either written by hand or in the case of third-party contributions (PRs)
+manually reviewed.
 
 ## FAQ
 

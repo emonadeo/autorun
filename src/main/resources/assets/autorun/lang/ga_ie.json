@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Ginearálta",
+  "config.autorun.alwaysSprint": "Bí ag Rith i gCónaí",
+  "config.autorun.alwaysSprint.description": "Bí ag rith i gCónaí agus an tAuto-Rith gníomhach",
+  "config.autorun.persistAutoRun": "Coimeád an Auto-Rith",
+  "config.autorun.persistAutoRun.description": "Coimeád an Auto-Rith ar fud na dtoise, na bhfreastalaí, agus na n-athbhásanna",
+  "config.autorun.showMessage": "Taispeáin Teachtaireacht",
+  "config.autorun.showMessage.description": "Taispeáin teachtaireacht nuair a bhíonn an Auto-Rith á scoránú",
+  "config.autorun.toggleAutoJump": "Scoránaigh an Auto-Léim",
+  "config.autorun.toggleAutoJump.description": "Cumasaigh an Auto-Léim agus an tAuto-Rith gníomhach",
+  "key.autorun.toggle": "Scoránaigh an Auto-Rith",
+  "title.autorun.config": "Auto-Rith"
+}

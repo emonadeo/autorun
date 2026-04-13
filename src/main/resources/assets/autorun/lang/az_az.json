@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Ümumi",
+  "config.autorun.alwaysSprint": "Həmişə qaçış",
+  "config.autorun.alwaysSprint.description": "Avtomatik qaçış aktiv olduğunda həmişə qaçış",
+  "config.autorun.persistAutoRun": "Avtomatik Qaçışı Saxla",
+  "config.autorun.persistAutoRun.description": "Avtomatik qaçışı ölçülər, serverlər və yenidən doğulma zamanı saxlayın",
+  "config.autorun.showMessage": "Mesajı göstər",
+  "config.autorun.showMessage.description": "Avtomatik qaçış toggle olunduğu zaman mesaj göstər",
+  "config.autorun.toggleAutoJump": "Avtomatik Sıçrayışı Toggle Et",
+  "config.autorun.toggleAutoJump.description": "Avtomatik qaçış aktiv olduğunda Avtomatik Sıçrayışı Etkinleştir",
+  "key.autorun.toggle": "Avtomatik Qaçışı Toggle Et",
+  "title.autorun.config": "Avtomatik Qaçış"
+}

@@ -1,7 +1,13 @@
 {
-	"config.autorun.general": "Algemeen",
-	"config.autorun.toggleAutoJump": "Automatisch springen",
-	"config.autorun.toggleAutoJump.description": "Activeer automatisch springen terwijl automatisch lopen actief is.",
-	"key.autorun.toggle": "Automatisch lopen",
-	"title.autorun.config": "Auto-Run"
+  "config.autorun.general": "Algemeen",
+  "config.autorun.alwaysSprint": "Altijd sprinten",
+  "config.autorun.alwaysSprint.description": "Altijd sprinten terwijl Auto-Run actief is",
+  "config.autorun.persistAutoRun": "Auto-Run behouden",
+  "config.autorun.persistAutoRun.description": "Houd Auto-Run ingeschakeld over dimensies, servers en herspawns",
+  "config.autorun.showMessage": "Bericht weergeven",
+  "config.autorun.showMessage.description": "Toon een bericht wanneer Auto-Run wordt gewijzigd",
+  "config.autorun.toggleAutoJump": "Auto-Jump omschakelen",
+  "config.autorun.toggleAutoJump.description": "Schakel Auto-Jump in terwijl Auto-Run actief is",
+  "key.autorun.toggle": "Auto-Run omschakelen",
+  "title.autorun.config": "Auto-Run"
 }

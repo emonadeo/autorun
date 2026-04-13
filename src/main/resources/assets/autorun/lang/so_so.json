@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Guud",
+  "config.autorun.alwaysSprint": "Iska iska jeed",
+  "config.autorun.alwaysSprint.description": "Iska iska jeed markii Auto-Jeed la bilaabay",
+  "config.autorun.persistAutoRun": "Hayso Auto-Jeed",
+  "config.autorun.persistAutoRun.description": "Hayso Auto-Jeed inta lagu jiro calmadooyin, khadimadooyinka, iyo dib-dhacooyin",
+  "config.autorun.showMessage": "Tusaa Fariinta",
+  "config.autorun.showMessage.description": "Tusaa fariinta markii Auto-Jeed la safo",
+  "config.autorun.toggleAutoJump": "Bedeledeloa Auto-Bodnid",
+  "config.autorun.toggleAutoJump.description": "Sii wad Auto-Bodnid markii Auto-Jeed la bilaabay",
+  "key.autorun.toggle": "Bedeledeloa Auto-Jeed",
+  "title.autorun.config": "Auto-Jeed"
+}

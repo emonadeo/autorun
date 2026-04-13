@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "lɐɹǝuƎ",
+  "config.autorun.alwaysSprint": "ʇᴎᴚS s⅄ꓥ∀",
+  "config.autorun.alwaysSprint.description": "uᴚ-oʇu∀ sᴉ ʇᴀ ǝlᴉɥʍ ʇᴎɹdS s⅄ꓥ∀",
+  "config.autorun.persistAutoRun": "uᴚ-oʇn∀ ʇsᴉɹsǝԀ",
+  "config.autorun.persistAutoRun.description": "sɯɹǝdsɹ puɐ 'sɹǝʌɹǝs 'suoᴉsuǝɯᴉp ssoɔɐ pǝlƃƃoʇ uᴚ-oʇn∀ dǝǝⱩ",
+  "config.autorun.showMessage": "ǝƃɐssǝM ʍoɥS",
+  "config.autorun.showMessage.description": "pǝlƃƃoʇ sᴉ uᴚ-oʇn∀ uǝɥʍ ǝƃɐssǝɯ ɐ ʍoɥS",
+  "config.autorun.toggleAutoJump": "dɯnſ oʇn∀ǝlƃƃoⱯ",
+  "config.autorun.toggleAutoJump.description": "ǝʌᴉʇɔɐ sᴉ uᴚ-oʇn∀ ǝlᴉɥʍ dɯnſ-oʇn∀ǝlqɐuƎ",
+  "key.autorun.toggle": "uᴚ-oʇn∀ ǝlƃƃoⱯ",
+  "title.autorun.config": "uᴚ-oʇn∀"
+}

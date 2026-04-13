@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Genevalot",
+  "config.autorun.alwaysSprint": "Sempre Velocxa",
+  "config.autorun.alwaysSprint.description": "Velocxa alema dun Auto-Kur xa aktiva, vole",
+  "config.autorun.persistAutoRun": "Persistem Auto-Kur",
+  "config.autorun.persistAutoRun.description": "Mantene Auto-Kur tra dimensios, servols, et reaviv",
+  "config.autorun.showMessage": "Mostrem Mesaje",
+  "config.autorun.showMessage.description": "Mostrem mesaje kun Auto-Kur toggles, plesme",
+  "config.autorun.toggleAutoJump": "Togglem Auto-Salta",
+  "config.autorun.toggleAutoJump.description": "Enablem Auto-Salta dun Auto-Kur aktiva",
+  "key.autorun.toggle": "Togglem Auto-Kur",
+  "title.autorun.config": "Auto-Kur Configuration"
+}

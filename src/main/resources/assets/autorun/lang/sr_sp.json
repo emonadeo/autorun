@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Опште",
+  "config.autorun.alwaysSprint": "Увек трка",
+  "config.autorun.alwaysSprint.description": "Увек трчати док је авто-трка активна",
+  "config.autorun.persistAutoRun": "Задржи авто-трку",
+  "config.autorun.persistAutoRun.description": "Задржи авто-трку при промени димензија, сервера и препорођаја",
+  "config.autorun.showMessage": "Прикажи поруку",
+  "config.autorun.showMessage.description": "Прикажи поруку када се авто-трка пребаца",
+  "config.autorun.toggleAutoJump": "Пребаци авто-скок",
+  "config.autorun.toggleAutoJump.description": "Омогући авто-скок док је авто-трка активна",
+  "key.autorun.toggle": "Пребаци авто-трку",
+  "title.autorun.config": "Авто-трка"
+}

@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Bendras",
+  "config.autorun.alwaysSprint": "Visada bėgti",
+  "config.autorun.alwaysSprint.description": "Visada bėk, kai Auto-Bėgimas yra aktyvus",
+  "config.autorun.persistAutoRun": "Išsaugoti Auto-Bėgimą",
+  "config.autorun.persistAutoRun.description": "Išsaugokite Auto-Bėgimą per dimensijas, serverius ir prisikėlimus",
+  "config.autorun.showMessage": "Rodyti žinutę",
+  "config.autorun.showMessage.description": "Rodyti žinutę, kai Auto-Bėgimas yra įjungtas",
+  "config.autorun.toggleAutoJump": "Perjungti Auto-Šuolį",
+  "config.autorun.toggleAutoJump.description": "Įjunkite Auto-Šuolį, kai Auto-Bėgimas yra aktyvus",
+  "key.autorun.toggle": "Perjungti Auto-Bėgimą",
+  "title.autorun.config": "Auto-Bėgimas"
+}

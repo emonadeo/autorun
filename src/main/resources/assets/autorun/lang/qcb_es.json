@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Xeneral",
+  "config.autorun.alwaysSprint": "Correr siempre",
+  "config.autorun.alwaysSprint.description": "Correr siempre mientras que la Carrera Automática ta activá",
+  "config.autorun.persistAutoRun": "Caltener la Carrera Automática",
+  "config.autorun.persistAutoRun.description": "Caltener la Carrera Automática activá antre dimensiones, servidores y reapariciones",
+  "config.autorun.showMessage": "Amosar mensax",
+  "config.autorun.showMessage.description": "Amosar un mensax cuando se cambie la Carrera Automática",
+  "config.autorun.toggleAutoJump": "Cambiar el Sautu Automáticu",
+  "config.autorun.toggleAutoJump.description": "Habilitar el Sautu Automáticu mientras que la Carrera Automática ta activá",
+  "key.autorun.toggle": "Cambiar la Carrera Automática",
+  "title.autorun.config": "Carrera Automática"
+}

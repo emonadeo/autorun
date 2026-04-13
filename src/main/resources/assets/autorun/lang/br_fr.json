@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Pennbroñs",
+  "config.autorun.alwaysSprint": "Redek Hep Dremm",
+  "config.autorun.alwaysSprint.description": "Redek hep dremm pa vez Auto-Redek aktiv",
+  "config.autorun.persistAutoRun": "Steurel Auto-Redek",
+  "config.autorun.persistAutoRun.description": "Lerc'h Auto-Redek a-c'hras dimensionoù, serveroù, hag adbreman",
+  "config.autorun.showMessage": "Diskouez Kemennoù",
+  "config.autorun.showMessage.description": "Diskouez kemennoù pa vez Auto-Redek tollet",
+  "config.autorun.toggleAutoJump": "Togla Auto-Lamm",
+  "config.autorun.toggleAutoJump.description": "Aotren Auto-Lamm pa vez Auto-Redek aktiv",
+  "key.autorun.toggle": "Togla Auto-Redek",
+  "title.autorun.config": "Auto-Redek"
+}

@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "പൊതുവായ",
+  "config.autorun.alwaysSprint": "എപ്പോഴും ഓടുക",
+  "config.autorun.alwaysSprint.description": "ഓട്ടോ-റൺ സജീവമായിരിക്കുമ്പോൾ എപ്പോഴും ഓടുക",
+  "config.autorun.persistAutoRun": "ഓട്ടോ-റൺ തുടരുക",
+  "config.autorun.persistAutoRun.description": "മാനങ്ങൾ, സെർവറുകൾ, പുനരുജ്ജീവനത്തിലെ ഓട്ടോ-റൺ സജീവമായി സൂക്ഷിക്കുക",
+  "config.autorun.showMessage": "സന്ദേശം കാണിക്കുക",
+  "config.autorun.showMessage.description": "ഓട്ടോ-റൺ ടോഗിൾ ചെയ്യുമ്പോൾ സന്ദേശം കാണിക്കുക",
+  "config.autorun.toggleAutoJump": "ഓട്ടോ-ജമ്പ് ടോഗിൾ ചെയ്യുക",
+  "config.autorun.toggleAutoJump.description": "ഓട്ടോ-റൺ സജീവമായിരിക്കുമ്പോൾ ഓട്ടോ-ജമ്പ് സജീവമാക്കുക",
+  "key.autorun.toggle": "ഓട്ടോ-റൺ ടോഗിൾ ചെയ്യുക",
+  "title.autorun.config": "ഓട്ടോ-റൺ"
+}

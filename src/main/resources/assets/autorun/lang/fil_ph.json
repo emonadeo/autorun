@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Pangkalahatang",
+  "config.autorun.alwaysSprint": "Palaging tumakbo nang mabilis",
+  "config.autorun.alwaysSprint.description": "Palaging tumakbo nang mabilis kapag ang Awtomatikong Takbo ay aktibo",
+  "config.autorun.persistAutoRun": "Panatilihin ang Awtomatikong Takbo",
+  "config.autorun.persistAutoRun.description": "Panatilihin ang status ng Awtomatikong Takbo sa pagbabago ng dimensyon, server, at muling pagsilang",
+  "config.autorun.showMessage": "Ipakita ang mensahe",
+  "config.autorun.showMessage.description": "Ipakita ang mensahe kapag binago ang Awtomatikong Takbo",
+  "config.autorun.toggleAutoJump": "I-toggle ang Awtomatikong Pagtalon",
+  "config.autorun.toggleAutoJump.description": "Paganahin ang Awtomatikong Pagtalon kapag ang Awtomatikong Takbo ay aktibo",
+  "key.autorun.toggle": "I-toggle ang Awtomatikong Takbo",
+  "title.autorun.config": "Awtomatikong Takbo"
+}

@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Жалпы",
+  "config.autorun.alwaysSprint": "Әрқашан жүгіру",
+  "config.autorun.alwaysSprint.description": "Автоматты жүгіру белсенді болғанда әрқашан жүгіру",
+  "config.autorun.persistAutoRun": "Автоматты жүгірілікті сақтау",
+  "config.autorun.persistAutoRun.description": "Өлшем, сервер және қайта туғу кезінде автоматты жүгіру күйін сақтап қалу",
+  "config.autorun.showMessage": "Хабарлама көрсету",
+  "config.autorun.showMessage.description": "Автоматты жүгірілік ауыстырылғанда хабарлама көрсету",
+  "config.autorun.toggleAutoJump": "Автоматты секіруді ауыстыру",
+  "config.autorun.toggleAutoJump.description": "Автоматты жүгіру белсенді болғанда автоматты секіруді қосу",
+  "key.autorun.toggle": "Автоматты жүгірілік ауыстыру",
+  "title.autorun.config": "Автоматты жүгіру"
+}

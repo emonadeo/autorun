@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Høgt Nynorsk",
+  "config.autorun.alwaysSprint": "Alltid sprint",
+  "config.autorun.alwaysSprint.description": "Løp alltid medan Auto-Sprint vert aktivt",
+  "config.autorun.persistAutoRun": "Bevar Auto-Sprint",
+  "config.autorun.persistAutoRun.description": "Bevar Auto-Sprint attmed dimensjonar, vertsservarar og gjenoppliving",
+  "config.autorun.showMessage": "Syn melding",
+  "config.autorun.showMessage.description": "Syn melding når Auto-Sprint vert slegen på",
+  "config.autorun.toggleAutoJump": "Slå Auto-Hopp på/av",
+  "config.autorun.toggleAutoJump.description": "Slå Auto-Hopp på medan Auto-Sprint vert aktivt",
+  "key.autorun.toggle": "Slå Auto-Sprint på/av",
+  "title.autorun.config": "Auto-Sprint"
+}

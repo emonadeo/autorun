@@ -1,0 +1,13 @@
+{
+  "config.autorun.general": "Основно",
+  "config.autorun.alwaysSprint": "Секогаш трча",
+  "config.autorun.alwaysSprint.description": "Секогаш трча кога е активна Авто-трката",
+  "config.autorun.persistAutoRun": "Задржување Авто-трка",
+  "config.autorun.persistAutoRun.description": "Задржете Авто-трка при промена на димензии, сервери и возрод",
+  "config.autorun.showMessage": "Прикажи порака",
+  "config.autorun.showMessage.description": "Прикажи порака кога се вклучува Авто-трка",
+  "config.autorun.toggleAutoJump": "Вклучување Авто-скок",
+  "config.autorun.toggleAutoJump.description": "Активирај Авто-скок кога е активна Авто-трката",
+  "key.autorun.toggle": "Вклучување Авто-трка",
+  "title.autorun.config": "Авто-трка"
+}
