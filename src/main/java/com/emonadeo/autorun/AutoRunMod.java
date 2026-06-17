@@ -60,7 +60,7 @@ public class AutoRunMod implements ClientModInitializer {
 		toggleAutoRunKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
 				"key.autorun.toggle",
 				InputConstants.Type.KEYSYM,
-				GLFW.GLFW_KEY_O, // Default to 'o'
+				GLFW.GLFW_KEY_V, // Default to 'v'
 				KeyMapping.Category.MOVEMENT));
 
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {

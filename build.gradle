@@ -73,7 +73,7 @@ publisher {
 	setVersion("mc${project.minecraft_version}-v${project.mod_version}")
 	setDisplayName("v${project.mod_version} (Minecraft ${project.minecraft_version})")
 	setChangelog(file("CHANGELOG.md"))
-	setGameVersions("26.1")
+	setGameVersions("26.2")
 	setLoaders("fabric")
 	setCurseEnvironment("client")
 	setArtifact(jar)

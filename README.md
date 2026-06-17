@@ -32,11 +32,17 @@ In that case please create a [GitHub Issue](https://github.com/emonadeo/autorun/
 
 ## Usage
 
-Press <kbd>O</kbd> to toggle Auto-Run.
+Press <kbd>V</kbd> to toggle Auto-Run.
 If you hold a specific direction during activation, it will in that direction.
 You can also hit the sprint key to sprint while auto-walking.
 
 This keybind can be customized in the controls options.
+
+
+> [!NOTE]
+> In `mc26.1-v1.5.0` and before the default key was <kbd>O</kbd>.
+> In `mc26.2-v1.6.0` this has been changed to <kbd>V</kbd> to not conflict with
+> the new friend list introduced in 26.2.
 
 ## Disclaimer
 
