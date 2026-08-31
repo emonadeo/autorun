@@ -29,49 +29,39 @@ public class AutoRunModMenu implements ModMenuApi, ConfigScreenFactory<Screen> {
 		// Always Sprint
 		general.addEntry(entryBuilder
 				.startBooleanToggle(
-						Component.translatable(
-								"config." + AutoRunMod.MODID + ".alwaysSprint"),
-						AutoRunMod.configAlwaysSprint)
+						Component.translatable("config." + AutoRunMod.MODID + ".alwaysSprint"),
+						AutoRunMod.configSprint)
 				.setDefaultValue(false)
-				.setTooltip(Component.translatable(
-						"config." + AutoRunMod.MODID + ".alwaysSprint"))
-				.setSaveConsumer((value) -> AutoRunMod.configAlwaysSprint = value)
+				.setTooltip(Component.translatable("config." + AutoRunMod.MODID + ".alwaysSprint.description"))
+				.setSaveConsumer((value) -> AutoRunMod.configSprint = value)
 				.build());
 
 		// Persist Auto-Run
 		general.addEntry(entryBuilder
 				.startBooleanToggle(
-						Component.translatable(
-								"config." + AutoRunMod.MODID + ".persistAutoRun"),
+						Component.translatable("config." + AutoRunMod.MODID + ".persistAutoRun"),
 						AutoRunMod.configPersistAutoRun)
 				.setDefaultValue(false)
-				.setTooltip(Component.translatable(
-						"config." + AutoRunMod.MODID + ".persistAutoRun.description"))
+				.setTooltip(Component.translatable("config." + AutoRunMod.MODID + ".persistAutoRun.description"))
 				.setSaveConsumer((value) -> AutoRunMod.configPersistAutoRun = value)
 				.build());
 
 		// Show Message
 		general.addEntry(entryBuilder
 				.startBooleanToggle(
-						Component.translatable(
-								"config." + AutoRunMod.MODID + ".showMessage"),
+						Component.translatable("config." + AutoRunMod.MODID + ".showMessage"),
 						AutoRunMod.configShowMessage)
 				.setDefaultValue(true)
-				.setTooltip(Component.translatable(
-						"config." + AutoRunMod.MODID + ".showMessage.description"))
+				.setTooltip(Component.translatable("config." + AutoRunMod.MODID + ".showMessage.description"))
 				.setSaveConsumer((value) -> AutoRunMod.configShowMessage = value)
 				.build());
 
 		// Toggle Auto-Jump
 		general.addEntry(entryBuilder
-				.startBooleanToggle(
-						Component.translatable(
-								"config." + AutoRunMod.MODID + ".toggleAutoJump"),
-						AutoRunMod.configToggleAutoJump)
+				.startBooleanToggle(Component.translatable("options.autoJump"), AutoRunMod.configAutoJump)
 				.setDefaultValue(true)
-				.setTooltip(Component.translatable(
-						"config." + AutoRunMod.MODID + ".toggleAutoJump.description"))
-				.setSaveConsumer((value) -> AutoRunMod.configToggleAutoJump = value)
+				.setTooltip(Component.translatable("config." + AutoRunMod.MODID + ".autoJump.description"))
+				.setSaveConsumer((value) -> AutoRunMod.configAutoJump = value)
 				.build());
 
 		return builder.setSavingRunnable(() -> {

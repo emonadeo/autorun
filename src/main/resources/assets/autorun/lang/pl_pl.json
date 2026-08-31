@@ -1,13 +1,14 @@
 {
-  "config.autorun.general": "Ogólne",
+  "commands.autorun.disable": "Deaktywowanie automatycznego biegu",
+  "commands.autorun.enable": "Aktywowanie automatycznego biegu",
   "config.autorun.alwaysSprint": "Zawsze biegaj",
   "config.autorun.alwaysSprint.description": "Zawsze biegaj, gdy auto-bieg jest aktywny",
+  "config.autorun.autoJump.description": "Włącz auto-skok, gdy auto-bieg jest aktywny",
+  "config.autorun.general": "Ogólne",
   "config.autorun.persistAutoRun": "Zachowaj auto-bieg",
   "config.autorun.persistAutoRun.description": "Zachowaj auto-bieg podczas zmiany wymiarów, serwerów i odrodzenia",
   "config.autorun.showMessage": "Pokaż wiadomość",
   "config.autorun.showMessage.description": "Pokaż wiadomość, gdy auto-bieg jest przełączany",
-  "config.autorun.toggleAutoJump": "Przełącz auto-skok",
-  "config.autorun.toggleAutoJump.description": "Włącz auto-skok, gdy auto-bieg jest aktywny",
   "key.autorun.toggle": "Przełącz auto-bieg",
   "title.autorun.config": "Auto-bieg"
 }

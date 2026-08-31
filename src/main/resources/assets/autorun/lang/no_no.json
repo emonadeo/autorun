@@ -1,13 +1,14 @@
 {
-  "config.autorun.general": "Generelt",
+  "commands.autorun.disable": "Deaktiverer Automatisk løping",
+  "commands.autorun.enable": "Aktiverer Automatisk løping",
   "config.autorun.alwaysSprint": "Alltid sprint",
-  "config.autorun.alwaysSprint.description": "Sprint alltid når Auto-Run er aktivt",
-  "config.autorun.persistAutoRun": "Behold Auto-Run",
-  "config.autorun.persistAutoRun.description": "Behold Auto-Run aktivert på tvers av dimensjoner, servere og respawns",
+  "config.autorun.alwaysSprint.description": "Sprint alltid når Automatisk løping er aktivt",
+  "config.autorun.autoJump.description": "Aktiver Automatisk hopping når Automatisk løping er aktivt",
+  "config.autorun.general": "Generelt",
+  "config.autorun.persistAutoRun": "Behold Automatisk løping",
+  "config.autorun.persistAutoRun.description": "Behold Automatisk løping aktivert på tvers av dimensjoner, servere og respawns",
   "config.autorun.showMessage": "Vis melding",
-  "config.autorun.showMessage.description": "Vis en melding når Auto-Run skifter",
-  "config.autorun.toggleAutoJump": "Slå Auto-Jump av/på",
-  "config.autorun.toggleAutoJump.description": "Aktiver Auto-Jump når Auto-Run er aktivt",
-  "key.autorun.toggle": "Slå Auto-Run av/på",
+  "config.autorun.showMessage.description": "Vis en melding når Automatisk løping skifter",
+  "key.autorun.toggle": "Slå Automatisk løping av/på",
   "title.autorun.config": "Auto-Run"
 }

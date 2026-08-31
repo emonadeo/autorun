@@ -1,13 +1,14 @@
 {
-  "config.autorun.general": "Genel",
+  "commands.autorun.disable": "Otomatik Koşu Devre Dışı Bırakılıyor",
+  "commands.autorun.enable": "Otomatik Koşu Etkinleştiriliyor",
   "config.autorun.alwaysSprint": "Her zaman sprint yap",
   "config.autorun.alwaysSprint.description": "Otomatik Koşu etkinken her zaman hızlı koş",
+  "config.autorun.autoJump.description": "Otomatik Koşu etkinken Otomatik Zıplamayı etkinleştir",
+  "config.autorun.general": "Genel",
   "config.autorun.persistAutoRun": "Otomatik Koşuyu Devam Ettir",
   "config.autorun.persistAutoRun.description": "Otomatik Koşuyu boyutlar, sunucular ve yeniden doğuş genelinde etkin tut",
   "config.autorun.showMessage": "İleti göster",
   "config.autorun.showMessage.description": "Otomatik Koşu değiştirildiğinde ileti göster",
-  "config.autorun.toggleAutoJump": "Otomatik Zıplamayı Aç/Kapat",
-  "config.autorun.toggleAutoJump.description": "Otomatik Koşu etkinken Otomatik Zıplamayı etkinleştir",
   "key.autorun.toggle": "Otomatik Koşuyu Aç/Kapat",
   "title.autorun.config": "Otomatik Koşu"
 }

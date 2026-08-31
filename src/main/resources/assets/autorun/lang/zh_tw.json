@@ -1,13 +1,14 @@
 {
-  "config.autorun.general": "一般設定",
+  "commands.autorun.disable": "正在禁用自動運行",
+  "commands.autorun.enable": "正在啟用自動運行",
   "config.autorun.alwaysSprint": "持續衝刺",
   "config.autorun.alwaysSprint.description": "自動跑步啟動時始終衝刺",
+  "config.autorun.autoJump.description": "自動跑步啟動時啟用自動跳躍",
+  "config.autorun.general": "一般設定",
   "config.autorun.persistAutoRun": "保持自動跑步",
   "config.autorun.persistAutoRun.description": "在切換維度、伺服器和重生後保持自動跑步狀態",
   "config.autorun.showMessage": "顯示訊息",
   "config.autorun.showMessage.description": "自動跑步切換時顯示訊息",
-  "config.autorun.toggleAutoJump": "切換自動跳躍",
-  "config.autorun.toggleAutoJump.description": "自動跑步啟動時啟用自動跳躍",
   "key.autorun.toggle": "切換自動跑步",
   "title.autorun.config": "自動跑步"
 }

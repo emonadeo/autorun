@@ -1,13 +1,14 @@
 {
-  "config.autorun.general": "Основное",
+  "commands.autorun.disable": "Деактивация автозапуска",
+  "commands.autorun.enable": "Активация автозапуска",
   "config.autorun.alwaysSprint": "Всегда спринт",
   "config.autorun.alwaysSprint.description": "Всегда спринтить при активном авто-беге",
+  "config.autorun.autoJump.description": "Включить авто-прыжок при активном авто-беге",
+  "config.autorun.general": "Основное",
   "config.autorun.persistAutoRun": "Сохранять авто-бег",
   "config.autorun.persistAutoRun.description": "Сохранять авто-бег при смене измерений, серверов и возрождений",
   "config.autorun.showMessage": "Показывать сообщение",
   "config.autorun.showMessage.description": "Показывать сообщение при переключении авто-бега",
-  "config.autorun.toggleAutoJump": "Переключить авто-прыжок",
-  "config.autorun.toggleAutoJump.description": "Включить авто-прыжок при активном авто-беге",
   "key.autorun.toggle": "Переключить авто-бег",
   "title.autorun.config": "Авто-бег"
 }

@@ -1,13 +1,14 @@
 {
-  "config.autorun.general": "Algemeen",
+  "commands.autorun.disable": "Automatisch rennen wordt gedeactiveerd",
+  "commands.autorun.enable": "Automatisch rennen wordt geactiveerd",
   "config.autorun.alwaysSprint": "Altijd sprinten",
-  "config.autorun.alwaysSprint.description": "Altijd sprinten terwijl Auto-Run actief is",
-  "config.autorun.persistAutoRun": "Auto-Run behouden",
-  "config.autorun.persistAutoRun.description": "Houd Auto-Run ingeschakeld over dimensies, servers en herspawns",
+  "config.autorun.alwaysSprint.description": "Altijd sprinten terwijl Automatisch rennen actief is",
+  "config.autorun.autoJump.description": "Schakel Automatisch springen in terwijl Automatisch rennen actief is",
+  "config.autorun.general": "Algemeen",
+  "config.autorun.persistAutoRun": "Automatisch rennen behouden",
+  "config.autorun.persistAutoRun.description": "Houd Automatisch rennen ingeschakeld over dimensies, servers en herspawns",
   "config.autorun.showMessage": "Bericht weergeven",
-  "config.autorun.showMessage.description": "Toon een bericht wanneer Auto-Run wordt gewijzigd",
-  "config.autorun.toggleAutoJump": "Auto-Jump omschakelen",
-  "config.autorun.toggleAutoJump.description": "Schakel Auto-Jump in terwijl Auto-Run actief is",
-  "key.autorun.toggle": "Auto-Run omschakelen",
+  "config.autorun.showMessage.description": "Toon een bericht wanneer Automatisch rennen wordt gewijzigd",
+  "key.autorun.toggle": "Automatisch rennen omschakelen",
   "title.autorun.config": "Auto-Run"
 }

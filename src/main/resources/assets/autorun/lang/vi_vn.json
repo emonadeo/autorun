@@ -1,13 +1,14 @@
 {
-  "config.autorun.general": "Cài đặt chung",
+  "commands.autorun.disable": "Đang hủy kích hoạt Chạy tự động",
+  "commands.autorun.enable": "Đang kích hoạt Chạy tự động",
   "config.autorun.alwaysSprint": "Luôn chạy nước rút",
   "config.autorun.alwaysSprint.description": "Luôn chạy nước rút khi Chạy tự động hoạt động",
+  "config.autorun.autoJump.description": "Bật Nhảy tự động khi Chạy tự động hoạt động",
+  "config.autorun.general": "Cài đặt chung",
   "config.autorun.persistAutoRun": "Giữ Chạy tự động",
   "config.autorun.persistAutoRun.description": "Giữ trạng thái Chạy tự động khi chuyển chiều, máy chủ và hồi sinh",
   "config.autorun.showMessage": "Hiển thị tin nhắn",
   "config.autorun.showMessage.description": "Hiển thị tin nhắn khi bật/tắt Chạy tự động",
-  "config.autorun.toggleAutoJump": "Bật/Tắt Nhảy tự động",
-  "config.autorun.toggleAutoJump.description": "Bật Nhảy tự động khi Chạy tự động hoạt động",
   "key.autorun.toggle": "Bật/Tắt Chạy tự động",
   "title.autorun.config": "Chạy tự động"
 }

@@ -1,13 +1,14 @@
 {
-  "config.autorun.general": "General",
+  "commands.autorun.disable": "Desactivando la ejecución automática",
+  "commands.autorun.enable": "Activando la ejecución automática",
   "config.autorun.alwaysSprint": "Siempre correr",
-  "config.autorun.alwaysSprint.description": "Siempre correr mientras Auto-Run está activo",
-  "config.autorun.persistAutoRun": "Conservar Auto-Run",
-  "config.autorun.persistAutoRun.description": "Mantener Auto-Run activado entre dimensiones, servidores y reapariciones",
+  "config.autorun.alwaysSprint.description": "Siempre correr mientras la ejecución automática esté activa",
+  "config.autorun.autoJump.description": "Habilitar salto automático mientras la ejecución automática esté activa",
+  "config.autorun.general": "General",
+  "config.autorun.persistAutoRun": "Conservar la ejecución automática",
+  "config.autorun.persistAutoRun.description": "Mantener la ejecución automática activada entre dimensiones, servidores y reapariciones",
   "config.autorun.showMessage": "Mostrar mensaje",
-  "config.autorun.showMessage.description": "Mostrar un mensaje cuando se activa/desactiva Auto-Run",
-  "config.autorun.toggleAutoJump": "Cambiar Auto-Jump",
-  "config.autorun.toggleAutoJump.description": "Activar Auto-Jump mientras Auto-Run está activo",
-  "key.autorun.toggle": "Cambiar Auto-Run",
+  "config.autorun.showMessage.description": "Mostrar un mensaje cuando se activa/desactiva la ejecución automática",
+  "key.autorun.toggle": "Cambiar la ejecución automática",
   "title.autorun.config": "Auto-Run"
 }

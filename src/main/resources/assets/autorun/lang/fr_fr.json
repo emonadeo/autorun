@@ -1,13 +1,14 @@
 {
-  "config.autorun.general": "Général",
+  "commands.autorun.disable": "Désactivation de la course automatique",
+  "commands.autorun.enable": "Activation de la course automatique",
   "config.autorun.alwaysSprint": "Toujours sprinter",
-  "config.autorun.alwaysSprint.description": "Toujours sprinter pendant que l'Auto-Run est actif",
-  "config.autorun.persistAutoRun": "Conserver l'Auto-Run",
-  "config.autorun.persistAutoRun.description": "Garder l'Auto-Run activé entre les dimensions, serveurs et réapparitions",
+  "config.autorun.alwaysSprint.description": "Toujours sprinter pendant que la course automatique est active",
+  "config.autorun.autoJump.description": "Activer le saut automatique pendant que la course automatique est active",
+  "config.autorun.general": "Général",
+  "config.autorun.persistAutoRun": "Conserver la course automatique",
+  "config.autorun.persistAutoRun.description": "Garder la course automatique activée entre les dimensions, les serveurs et les réapparitions",
   "config.autorun.showMessage": "Afficher un message",
-  "config.autorun.showMessage.description": "Afficher un message lors du basculement de l'Auto-Run",
-  "config.autorun.toggleAutoJump": "Basculer Auto-Jump",
-  "config.autorun.toggleAutoJump.description": "Activer Auto-Jump pendant que l'Auto-Run est actif",
-  "key.autorun.toggle": "Basculer l'Auto-Run",
+  "config.autorun.showMessage.description": "Afficher un message lors du basculement de la course automatique",
+  "key.autorun.toggle": "Basculer la course automatique",
   "title.autorun.config": "Auto-Run"
 }

@@ -1,13 +1,14 @@
 {
-  "config.autorun.general": "Umum",
+  "commands.autorun.disable": "Menyahaktifkan Larian automatik",
+  "commands.autorun.enable": "Mengaktifkan Larian automatik",
   "config.autorun.alwaysSprint": "Sentiasa berlari cepat",
   "config.autorun.alwaysSprint.description": "Sentiasa berlari cepat apabila Larian Automatik aktif",
+  "config.autorun.autoJump.description": "Dayakan Lompatan Automatik apabila Larian Automatik aktif",
+  "config.autorun.general": "Umum",
   "config.autorun.persistAutoRun": "Kekalkan Larian Automatik",
   "config.autorun.persistAutoRun.description": "Kekalkan status Larian Automatik apabila menukar dimensi, pelayan, dan penghidupan semula",
   "config.autorun.showMessage": "Paparkan mesej",
   "config.autorun.showMessage.description": "Paparkan mesej apabila menukar Larian Automatik",
-  "config.autorun.toggleAutoJump": "Togol Lompatan Automatik",
-  "config.autorun.toggleAutoJump.description": "Dayakan Lompatan Automatik apabila Larian Automatik aktif",
   "key.autorun.toggle": "Togol Larian Automatik",
   "title.autorun.config": "Larian Automatik"
 }

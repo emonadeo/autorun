@@ -1,13 +1,14 @@
 {
-  "config.autorun.general": "일반",
+  "commands.autorun.disable": "자동 달리기 비활성화 중",
+  "commands.autorun.enable": "자동 달리기 활성화 중",
   "config.autorun.alwaysSprint": "항상 질주",
   "config.autorun.alwaysSprint.description": "자동 실행이 활성화되면 항상 질주합니다",
+  "config.autorun.autoJump.description": "자동 실행이 활성화되면 자동 점프를 활성화합니다",
+  "config.autorun.general": "일반",
   "config.autorun.persistAutoRun": "자동 실행 유지",
   "config.autorun.persistAutoRun.description": "차원 변경, 서버 전환 및 리스폰 후에도 자동 실행 상태를 유지합니다",
   "config.autorun.showMessage": "메시지 표시",
   "config.autorun.showMessage.description": "자동 실행 토글 시 메시지를 표시합니다",
-  "config.autorun.toggleAutoJump": "자동 점프 토글",
-  "config.autorun.toggleAutoJump.description": "자동 실행이 활성화되면 자동 점프를 활성화합니다",
   "key.autorun.toggle": "자동 실행 토글",
   "title.autorun.config": "자동 실행"
 }

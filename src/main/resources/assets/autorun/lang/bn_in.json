@@ -1,13 +1,14 @@
 {
-  "config.autorun.general": "সাধারণ",
+  "commands.autorun.disable": "অটো-রান নিষ্ক্রিয় করা হচ্ছে",
+  "commands.autorun.enable": "অটো-রান সক্রিয় করা হচ্ছে",
   "config.autorun.alwaysSprint": "সর্বদা দৌড়ান",
   "config.autorun.alwaysSprint.description": "অটো-রান সক্রিয় থাকাকালীন সর্বদা দৌড়ান",
+  "config.autorun.autoJump.description": "অটো-রান সক্রিয় থাকাকালীন অটো-জাম্প সক্ষম করুন",
+  "config.autorun.general": "সাধারণ",
   "config.autorun.persistAutoRun": "অটো-রান অব্যাহত রাখুন",
   "config.autorun.persistAutoRun.description": "মাত্রা, সার্ভার এবং পুনরুজ্জীবনের মধ্যে অটো-রান সক্রিয় রাখুন",
   "config.autorun.showMessage": "বার্তা দেখান",
   "config.autorun.showMessage.description": "অটো-রান টগল করার সময় বার্তা দেখান",
-  "config.autorun.toggleAutoJump": "অটো-জাম্প টগল করুন",
-  "config.autorun.toggleAutoJump.description": "অটো-রান সক্রিয় থাকাকালীন অটো-জাম্প সক্ষম করুন",
   "key.autorun.toggle": "অটো-রান টগল করুন",
   "title.autorun.config": "অটো-রান"
 }

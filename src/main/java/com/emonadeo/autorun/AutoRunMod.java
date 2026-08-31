@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Optional;
 import java.util.Properties;
 
 import org.lwjgl.glfw.GLFW;
@@ -28,10 +27,10 @@ public class AutoRunMod implements ClientModInitializer {
 	public static final File CFG_FILE = new File(FabricLoader.getInstance().getConfigDir().toFile(),
 			"autorun.properties");
 
-	public static boolean configAlwaysSprint = false;
+	public static boolean configAutoJump = true;
 	public static boolean configPersistAutoRun = false;
 	public static boolean configShowMessage = true;
-	public static boolean configToggleAutoJump = true;
+	public static boolean configSprint = false;
 
 	public static boolean overrideForward = false;
 	public static boolean overrideBackward = false;
@@ -112,16 +111,17 @@ public class AutoRunMod implements ClientModInitializer {
 
 	private static void activateAutoRun(Minecraft client) {
 		if (configShowMessage) {
-			client.player.sendOverlayMessage(Component.literal("Activating Auto-Run"));
+			client.player.sendOverlayMessage(
+					Component.translatable("commands." + AutoRunMod.MODID + ".enable"));
 		}
 
-		if (configToggleAutoJump) {
+		if (configAutoJump) {
 			originalAutoJumpSetting = client.options.autoJump().get();
 			client.options.autoJump().set(true);
 			client.options.broadcastOptions();
 		}
 
-		if (client.player.isSprinting() || configAlwaysSprint) {
+		if (client.player.isSprinting() || configSprint) {
 			overrideSprint = true;
 		}
 		Input input = client.player.input.keyPresses;
@@ -147,7 +147,7 @@ public class AutoRunMod implements ClientModInitializer {
 
 	private static void deactivateAutoRun(Minecraft client) {
 		if (configShowMessage) {
-			client.player.sendOverlayMessage(Component.literal("Deactivating Auto-Run"));
+			client.player.sendOverlayMessage(Component.translatable("commands." + AutoRunMod.MODID + ".disable"));
 		}
 
 		overrideForward = false;
@@ -157,7 +157,7 @@ public class AutoRunMod implements ClientModInitializer {
 		overrideSprint = false;
 
 		// Restore Auto-Jump
-		if (configToggleAutoJump) {
+		if (configAutoJump) {
 			client.options.autoJump().set(originalAutoJumpSetting);
 			client.options.broadcastOptions();
 		}
@@ -170,10 +170,10 @@ public class AutoRunMod implements ClientModInitializer {
 				saveConfig(file);
 			}
 			cfg.load(new FileInputStream(file));
-			configAlwaysSprint = Boolean.parseBoolean(cfg.getProperty("alwaysSprint", "false"));
+			configSprint = Boolean.parseBoolean(cfg.getProperty("alwaysSprint", "false"));
 			configPersistAutoRun = Boolean.parseBoolean(cfg.getProperty("persistAutoRun", "false"));
 			configShowMessage = Boolean.parseBoolean(cfg.getProperty("showMessage", "true"));
-			configToggleAutoJump = Boolean.parseBoolean(cfg.getProperty("toggleAutoJump", "true"));
+			configAutoJump = Boolean.parseBoolean(cfg.getProperty("autoJump", "true"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -182,10 +182,10 @@ public class AutoRunMod implements ClientModInitializer {
 	public static void saveConfig(File file) {
 		try {
 			FileOutputStream fos = new FileOutputStream(file, false);
-			fos.write(("alwaysSprint=" + configAlwaysSprint + "\n").getBytes());
+			fos.write(("alwaysSprint=" + configSprint + "\n").getBytes());
 			fos.write(("persistAutoRun=" + configPersistAutoRun + "\n").getBytes());
 			fos.write(("showMessage=" + configShowMessage + "\n").getBytes());
-			fos.write(("toggleAutoJump=" + configToggleAutoJump + "\n").getBytes());
+			fos.write(("autoJump=" + configAutoJump + "\n").getBytes());
 			fos.close();
 		} catch (IOException e) {
 			e.printStackTrace();
