@@ -21,7 +21,7 @@
 	"depends": {
 		"fabric-api": "*",
 		"fabricloader": ">=0.18.4",
-		"minecraft": ">=26.1"
+		"minecraft": ">=26.3"
 	},
 	"suggests": {
 		"modmenu": ">=18",
