@@ -19,6 +19,10 @@ Install these mods alongside Auto-Run.
 - [Fabric API](https://modrinth.com/mod/fabric-api) is **required**
 - [Mod Menu](https://modrinth.com/mod/modmenu) and [Cloth Config API](https://modrinth.com/mod/cloth-config) are **optional**
 
+> [!IMPORTANT]
+> If you install Mod Menu you **must** also install Cloth Config API.
+> Otherwise the game will crash if you try to configure Auto-Run.
+
 ### Cross-version support
 
 When a new Minecraft update drops, most of the times this mod “just works”.
